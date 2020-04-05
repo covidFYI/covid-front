@@ -73,7 +73,7 @@ export default {
     }
     main{
       height: 120px;
-      width: 140px;
+      width: 160px;
       box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
       border-radius: 4px;
     }

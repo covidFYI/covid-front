@@ -144,14 +144,14 @@ export default {
     margin-top:17px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+    grid-gap:.8rem;
     text-align: center;
   }
   
 }
-@media screen and (max-width:374px){
+@media screen and (max-width:400px){
   .info-grid{
-    grid-gap:1rem;
+    grid-gap:.6rem;
   }
 }
   

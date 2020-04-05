@@ -111,16 +111,16 @@ export default {
   }
   .info-grid{
     margin-top:10px;
-    grid-gap:2rem;
+    grid-gap:1.5rem;
     grid-template-columns: 1fr 1fr;
     
     text-align: center;
   }
   
 }
-@media screen and (max-width:350px){
+@media screen and (max-width:400px){
   .info-grid{
-    grid-gap: 1rem;
+    grid-gap: 0.7rem;
   }
 }
 </style>
