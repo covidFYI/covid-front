@@ -136,7 +136,7 @@ export default {
     margin-top:10px;
     
     grid-template-columns: 1fr 1fr;
-    
+    grid-gap: 1.8rem;
     text-align: center;
   }
   input{
@@ -150,10 +150,10 @@ export default {
     
   }
 }
-@media screen and (max-width: 374px){
+@media screen and (max-width: 400px){
 
   .info-grid{
-    grid-gap:1rem;
+    grid-gap:.7rem;
   }
 }
 </style>
