@@ -1,5 +1,10 @@
 <template>
+  
   <div id="app">
+  <vue-headful 
+    title="COVID-FYI"
+    description="A one stop platform for all COVID information"  
+  />
     <nav>
       <router-link class = "hero" tag = "div" to="/">
         <img src="./assets/logo.svg" id="logo">
@@ -48,6 +53,7 @@
     </footer>
   </div>
 </template>
+
 
 <style>
 :root{
