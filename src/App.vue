@@ -5,7 +5,7 @@
         <img src="./assets/logo.svg" id="logo">
         <div class="hero-text">
           <h1 class = "name">Covid <span id="fyi">FYI</span></h1>
-          <p class="tagline">A one stop platform for all<br>COVID-19 information.</p>
+          <p class="tagline">One stop for all<br>COVID-19 information.</p>
         </div>      
       </router-link>
       <div class="helplines-lg">

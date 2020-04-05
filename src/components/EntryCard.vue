@@ -122,6 +122,7 @@ export default {
   @media screen and (max-width:400px){
     .email{
       font-size: 8.6px;
+      
     }
   }
 </style>
