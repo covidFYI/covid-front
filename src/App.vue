@@ -139,6 +139,7 @@ footer{
   background: var(--light-background-color);
   padding: 60px;
 }
+
 .liscence{
   text-align: left;
   color: var(--light-text-color);
@@ -214,6 +215,3 @@ footer{
 
 </style>
 
-
-<!--       Home</router-link> |
-      <router-link to="/about">About</router-link> -->

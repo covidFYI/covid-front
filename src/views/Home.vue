@@ -97,8 +97,9 @@ export default {
     margin-top:50px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 4rem;
+    grid-gap: 4rem;
   }
+  
 
 @media screen and (max-width: 600px){
   .home{
@@ -110,15 +111,16 @@ export default {
   }
   .info-grid{
     margin-top:10px;
-    display: inline-grid;
+    grid-gap:2rem;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
+    
     text-align: center;
   }
+  
 }
 @media screen and (max-width:350px){
   .info-grid{
-    grid-gap:1rem;
+    grid-gap: 1rem;
   }
 }
 </style>

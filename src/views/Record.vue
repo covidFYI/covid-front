@@ -7,7 +7,7 @@
 
         <div class = "breadcrumb">
           <router-link to="/">Home</router-link> >
-          <router-link to="/state">State</router-link>
+          <router-link :to="{name: 'State', query:{type: currentType } }">State</router-link>
           <span> > {{currentType}} </span>
         </div>
          <div class="info-grid">
@@ -142,9 +142,9 @@ export default {
   .info-grid{
     
     margin-top:17px;
-    display: inline-grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
+    
     text-align: center;
   }
   

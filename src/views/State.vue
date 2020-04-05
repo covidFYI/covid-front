@@ -134,9 +134,9 @@ export default {
   .info-grid{
     
     margin-top:10px;
-    display: inline-grid;
+    
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
+    
     text-align: center;
   }
   input{
@@ -150,9 +150,5 @@ export default {
     
   }
 }
-@media screen and (max-width:350px){
-  .info-grid{
-    grid-gap:1rem;
-  }
-}
+
 </style>

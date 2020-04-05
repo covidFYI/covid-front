@@ -84,13 +84,13 @@ export default {
 
     @media screen and (max-width:600px){
     .heading{
-      font-size: 18px;
+      font-size: 16px;
     }
     .district{
       font-size: 12px;
     }
     .email{
-      font-size: 12px;
+      font-size: 10px;
     }
     .phone{
       font-size: 12px;
