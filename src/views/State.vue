@@ -119,7 +119,7 @@ export default {
     font-weight: 800;
     text-align: left;    
   }
-  @media screen and (max-width: 600px){
+@media screen and (max-width: 600px){
   .state{
     padding: 20px 12.5px 20px 12.5px;
   }
@@ -150,5 +150,10 @@ export default {
     
   }
 }
+@media screen and (max-width: 374px){
 
+  .info-grid{
+    grid-gap:1rem;
+  }
+}
 </style>

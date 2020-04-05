@@ -149,7 +149,7 @@ export default {
   }
   
 }
-@media screen and (max-width:350px){
+@media screen and (max-width:374px){
   .info-grid{
     grid-gap:1rem;
   }

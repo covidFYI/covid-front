@@ -3,12 +3,16 @@
     <div class="content">
         <p class = "heading">{{data.name}}</p>
         <p class = "district" >{{data.district}}</p>
-        <p class = "contact-details">
+        <div class = "contact-details">
             <p><a v-bind:href="'mailto:' + data.email_id_1 " v-if="data.email_id_1" class = "email">{{data.email_id_1}}</a></p>
             <p>
             <a v-bind:href="'tel:'+data.phone_1" v-if="data.phone_1" class = "phone">{{data.phone_1}}</a>
             </p>
-        </p>
+        </div>
+        <div class="contact-icons">
+          <a v-bind:href="'mailto:' + data.email_id_1 " v-if="data.email_id_1"><img src="../assets/email.svg" class="icon"></a>
+          <a v-bind:href="'mailto:' + data.email_id_1 " v-if="data.email_id_1"><img src="../assets/call.svg" class="icon"></a>
+        </div>
     </div>
   </main>
 </template>
@@ -48,6 +52,11 @@ export default {
     text-align: center;
     
   }
+  .icon{
+    height:50px;
+    width:50px;
+    margin:20px
+  }
 
   
 
@@ -65,12 +74,12 @@ export default {
   .contact-details{
       margin-top:15px;
       font-size: 18px;
-      
+      word-wrap: break-word;
   }
   
     .email{
         color: var(--primary-color);
-        font-size: 20px;
+        font-size: 16px;
         text-decoration: none;
         font-weight: 800;
     }          
@@ -82,15 +91,22 @@ export default {
         text-decoration: none;
     }
 
+    .contact-icons{
+      margin-top:20px;
+    }
+
     @media screen and (max-width:600px){
     .heading{
-      font-size: 16px;
+      font-size: 14px;
     }
     .district{
       font-size: 12px;
     }
     .email{
       font-size: 10px;
+    }
+    .contact-icons{
+      display:none;
     }
     .phone{
       font-size: 12px;
@@ -101,6 +117,11 @@ export default {
       box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
       border-radius: 4px;
       padding:8px;
+    }
+  }
+  @media screen and (max-width:400px){
+    .email{
+      font-size: 8.6px;
     }
   }
 </style>
