@@ -11,7 +11,7 @@
         </div>
         <div class="contact-icons">
           <a v-bind:href="'mailto:' + data.email_id_1 " v-if="data.email_id_1"><img src="../assets/email.svg" class="icon"></a>
-          <a v-bind:href="'mailto:' + data.email_id_1 " v-if="data.email_id_1"><img src="../assets/call.svg" class="icon"></a>
+          <a v-bind:href="'tel:' + data.phone_1 " v-if="data.email_id_1"><img src="../assets/call.svg" class="icon"></a>
         </div>
     </div>
   </main>
