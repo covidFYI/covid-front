@@ -46,14 +46,14 @@ export default {
     justify-content: center;
     align-items: center;
     text-align: center;
+    
   }
 
   
-  
-  
+
   .heading{
     font-size: 25px;
-    font-weight: 900;
+    font-weight: 800;
     color: var(--light-text-color);
   }  
 
@@ -73,7 +73,7 @@ export default {
         font-size: 20px;
         text-decoration: none;
         font-weight: 800;
-    }
+    }          
     .phone{
         color: var(--primary-color);
         font-size: 20px;
@@ -81,4 +81,26 @@ export default {
         font-weight: 800;
         text-decoration: none;
     }
+
+    @media screen and (max-width:600px){
+    .heading{
+      font-size: 18px;
+    }
+    .district{
+      font-size: 12px;
+    }
+    .email{
+      font-size: 12px;
+    }
+    .phone{
+      font-size: 12px;
+    }
+    main{
+      height: 200px;
+      width: 140px;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+      border-radius: 4px;
+      padding:8px;
+    }
+  }
 </style>

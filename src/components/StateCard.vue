@@ -46,5 +46,16 @@ export default {
   a{
     text-decoration: none;
   }
+    @media screen and (max-width:600px){
+    .name{
+      font-size: 16px;
+    }
+    main{
+      height: 70px;
+      width: 140px;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+      border-radius: 4px;
+    }
+  }
   
 </style>

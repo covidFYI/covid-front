@@ -1,17 +1,20 @@
 <template>
   <div class="home">
-    <div class = "heading">What may we help you find today?</div>
+    <img src="../assets/logo.svg" v-show="!loaded" id="logo">
     
-      <transition-group  tag = "div" class = "info-grid" name="fade">
+    
+    <div class = "heading" v-show="loaded">What may we help you find today?</div>
+      <div class = "info-grid">
       <InfoTypeCard
         v-for="(type, index) in infotypes"
         v-bind:name="type"
         v-bind:key="index"
       >
       </InfoTypeCard>
-      </transition-group>
+      </div>
     
   </div>
+  
 </template>
 
 <script>
@@ -25,7 +28,9 @@ export default {
     return{
       infotypes: [],
       respData: [],
-      URL: 'http://127.0.0.1:8000/api/v1/covidfyi/'
+      URL: 'https://covid-fyi-backend-2.herokuapp.com/api/v1/covidfyi/',
+      //URL: 'http://127.0.0.1:8000/api/v1/covidfyi/',
+      loaded:false
     }
   },
   components: {
@@ -38,12 +43,16 @@ export default {
         localStorage.setItem('states', JSON.stringify(resp.data));        
         localStorage.setItem('visited', 'true');
         this.infotypes = resp.data.map(el => el.info_type);
+      }).catch(err => {
+        alert(err)
       })
     }else{
       const data = JSON.parse(localStorage.getItem('states'));
       this.infotypes = data.map(el => el.info_type);
     }
+    this.loaded = true;
     this.scrollToTop();
+  
   },
   methods: {
     scrollToTop: function(){
@@ -54,6 +63,25 @@ export default {
 </script>
 
 <style scoped>
+#logo{
+    height:200px;
+    width: 200px;
+    margin:auto;
+    animation: pulse 2s cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
+  }
+  @keyframes pulse {
+    0%{
+      opacity:1;
+      
+    }50%{
+      opacity:0.3;
+      transform: rotate(360deg);
+      
+    }100%{
+      opacity:1;
+      transform: rotate(0deg);
+    }
+  }
   .home{
     background-color: var(--dark-background-color);
     padding: 80px 50px 80px 50px;
@@ -62,7 +90,7 @@ export default {
     color: var(--light-text-color);
     font-size: 32px;
     text-align: left;
-    font-weight: 900;
+    font-weight: 800;
     margin-bottom:50px;
   }
   .info-grid{
@@ -71,11 +99,26 @@ export default {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 4rem;
   }
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .3s;
-  opacity:1;
+
+@media screen and (max-width: 600px){
+  .home{
+    padding: 20px 12.5px 20px 12.5px;
+  }
+  .heading{
+    font-size:24px;
+    margin-bottom:14px;
+  }
+  .info-grid{
+    margin-top:10px;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    text-align: center;
+  }
 }
-.fade-enter, .fade-leave-to  {
-  opacity: 0;
+@media screen and (max-width:350px){
+  .info-grid{
+    grid-gap:1rem;
+  }
 }
 </style>

@@ -29,7 +29,8 @@ export default {
   data: function(){
     return{
       states: [],
-      URL: 'http://127.0.0.1:8000/api/v1/covidfyi/',
+      //URL: 'http://127.0.0.1:8000/api/v1/covidfyi/',
+      URL: 'https://covid-fyi-backend-2.herokuapp.com/',
       stateQuery: ''
     }
   },
@@ -82,7 +83,7 @@ export default {
     color: var(--light-text-color);
     font-size: 32px;
     text-align: left;
-    font-weight: 900;
+    font-weight: 800;
     margin-bottom:40px;
     margin-top: 20px;
   }
@@ -115,7 +116,43 @@ export default {
   .breadcrumb{
     font-size: 30px;
     color: var(--light-text-color);
-    font-weight: 900;
+    font-weight: 800;
     text-align: left;    
   }
+  @media screen and (max-width: 600px){
+  .state{
+    padding: 20px 12.5px 20px 12.5px;
+  }
+  .heading{
+    font-size:22px;
+    margin-bottom:14px;
+    margin-top:8px;
+  }
+  .breadcrumb{
+    font-size:18px;
+  }
+  .info-grid{
+    
+    margin-top:10px;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    text-align: center;
+  }
+  input{
+    height:35px;
+    border-radius:4px;
+    font-size:16px;
+    padding:9px;
+    box-shadow: inset 0 .4px 1.2px 0 rgba(0,0,0,0.5);
+    margin-bottom:10px;
+    width:100%;
+    
+  }
+}
+@media screen and (max-width:350px){
+  .info-grid{
+    grid-gap:1rem;
+  }
+}
 </style>

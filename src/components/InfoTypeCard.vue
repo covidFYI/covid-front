@@ -30,14 +30,13 @@ export default {
 
 <style scoped>
 
-  .active{
-    color: var(--primary-color);
-  }
+  
   main{
     color: var(--light-text-color);
     height: 250px;
     width: 360px;
     background: var(--background-gradient);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
     border-radius: 8px;
     display: flex;
     transition: .3s;
@@ -66,6 +65,18 @@ export default {
   }
   a{
     text-decoration: none;
+  }
+
+  @media screen and (max-width:600px){
+    .name{
+      font-size: 16px;
+    }
+    main{
+      height: 120px;
+      width: 140px;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+      border-radius: 4px;
+    }
   }
   
   

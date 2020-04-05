@@ -35,7 +35,8 @@ export default {
   data: function(){
     return{
       state: this.$route.params.state,
-      URL: 'http://127.0.0.1:8000/api/v1/covidfyi/',
+      //URL: 'http://127.0.0.1:8000/api/v1/covidfyi/',
+      URL: 'https://covid-fyi-backend-2.herokuapp.com/api/v1/covidfyi/',
       loaded: false,
       data: []
     }
@@ -91,7 +92,7 @@ export default {
     height:200px;
     width: 200px;
     margin:auto;
-    animation: pulse 1.5s infinite;
+    animation: pulse 2s cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
   }
   .state{
     background-color: var(--dark-background-color);
@@ -107,7 +108,7 @@ export default {
   .breadcrumb{
     font-size: 30px;
     color: var(--light-text-color);
-    font-weight: 900;
+    font-weight: 800;
     text-align: left;    
   }
   .info-grid{
@@ -120,14 +121,38 @@ export default {
   @keyframes pulse {
     0%{
       opacity:1;
-      transform: rotate(0deg);
+      
     }50%{
       opacity:0.3;
       transform: rotate(360deg);
+      
     }100%{
       opacity:1;
-      transform: rotate(-360deg);
+      transform: rotate(0deg);
     }
   }
+  @media screen and (max-width: 600px){
+  .state{
+    padding: 20px 12.5px 20px 12.5px;
+  }
+  
+  .breadcrumb{
+    font-size:20px;
+  }
+  .info-grid{
+    
+    margin-top:17px;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    text-align: center;
+  }
+  
+}
+@media screen and (max-width:350px){
+  .info-grid{
+    grid-gap:1rem;
+  }
+}
   
 </style>
