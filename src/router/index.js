@@ -21,6 +21,12 @@ const routes = [
     name: "Record",
     component: () =>
       import("../views/Record.vue")
+  },
+  {
+    path: "*",
+    name: "NotFound",
+    component: () =>
+      import("../views/NotFound.vue")
   }
 ];
 
