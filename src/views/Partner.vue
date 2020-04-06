@@ -8,7 +8,7 @@
         <div class="card">
             <div class="card-head">Product Integrations</div>
             <div class="card-body">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus sint consequuntur quasi, magni laboriosam quidem sit porro quia sunt delectus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptates delectus deleniti numquam saepe quidem facere eos laudantium placeat eius?
             </div>
         </div>
         <div class="card">

@@ -77,18 +77,23 @@
   text-align: center;
   min-height:100vh;
   background: var(--light-background-color);
-  
+  display: flex;
+  flex-direction: column;
 }
+.home, .state, .NotFound, .partner, .contact{
+  flex:10;
+} 
 nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: var(--light-background-color);
   padding: 30px 20px 30px 20px;
-  
+  flex: 2;
 }
 .footer-sm{
   display: none;
+  flex: 1;
 }
 #logo{
   height: 100px;
@@ -139,6 +144,7 @@ a{
 footer{
   background: var(--light-background-color);
   padding: 60px;
+  flex: 1;
 }
 
 .liscence{
@@ -213,6 +219,7 @@ footer{
   footer{
     padding:30px;
   }
+
   
 }
 
