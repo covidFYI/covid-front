@@ -6,8 +6,7 @@
     <router-link  to="/partner">Looking to partner with us? Click here.</router-link>
     <div class="kwes-form">
     <form method="POST" action="https://kwes.io/api/foreign/forms/jofKkskII5ow1upSICAx">
-        <div><input type="text" name="name" rules="required|max:255" placeholder = "What's your name?"></div>
-        <div><input name="contact-detail" placeholder="How to contact you?"></div>
+        <div><input type="text" name="name" rules="max:255" placeholder = "What's your name?"></div>
         <div><textarea name="message" placeholder="Type your message here..."></textarea></div>
         <button type="submit">Submit</button>
     </form>
@@ -39,12 +38,13 @@ export default {
     color: var(--light-text-color);
 
 }
+.kwes-form{
+    margin-top:30px;
+}
 input{
     width:70vw;
     height: 40px;
-    margin:20px;
-    margin-left:0;
-    margin-bottom: 0;
+    
     padding:15px;
     font-size:1rem;
     font-family: objektiv-mk3;
@@ -93,21 +93,21 @@ a{
     }
     input{
         width:80vw;
-        height:30px;
+        height:40px;
         padding:10px;
-        font-size:.8rem;
+        font-size:.9rem;
     }
     textarea{
         width:80vw;
         height:90px;
         padding:10px;
-        font-size:.8rem;
+        font-size:.9rem;
     }
     .heading{
         font-size: 18px;
     }
     button{
-        font-size: .8rem;
+        font-size: .9rem;
     }
 }
 </style>
