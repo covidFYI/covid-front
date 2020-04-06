@@ -52,11 +52,13 @@ export default {
       if(this.loaded){
         let l = [];
         for(let i = 0; i < this.data.length; i++){
-          console.log(`${this.data[i].district} - ${this.data[i].entries.length}`);
+          
           for(let j = 0; j < this.data[i].entries.length; j++){     
             let type = this.data[i].entries[j].infotype;
             if(type === this.currentType){
-              l.push(this.data[i].entries[j]);
+              let entry = this.data[i].entries[j];
+              entry.district = this.data[i].district
+              l.push(entry);
             }  
           } 
         }
@@ -70,7 +72,7 @@ export default {
   created(){
     
     this.scrollToTop();
-    console.log('Running created hook.')
+    
     axios.get(`${this.URL}states/${this.state}/`)
     .then(resp => {
     

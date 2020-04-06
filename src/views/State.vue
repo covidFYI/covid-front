@@ -16,6 +16,9 @@
       >
       </StateCard>
     </div>
+    <div v-show="showHelperText" class="helper-text"><h3>{{helperText}}</h3>
+    </div>
+
   </div>
 </template>
 
@@ -45,6 +48,15 @@ export default {
       return this.stateQuery===''?this.states:this.states.filter(item => {
               return item.toLowerCase().includes(this.stateQuery.toLowerCase());
           })
+    },
+    showHelperText: function(){
+      return (this.currentType==='Doctor' || this.currentType==='Government' || this.displayStates.length < 8);
+    },
+    helperText: function(){
+      if(this.currentType==='Doctor') return 'Hi! As doctors are available on-call, feel free to contact doctors in other states.'
+      else if(this.currentType==='Government') return 'Government officers are nation-wide.'
+      else if(this.displayStates.length < 8) return 'Our team is working hard to add more data!'
+      
     }
   },
   mounted(){
@@ -68,7 +80,8 @@ export default {
   methods: {
     scrollToTop: function(){
       window.scrollTo(0,0);
-    }
+    },
+    
   }
 };
 </script>
@@ -108,6 +121,12 @@ export default {
     transition: 0.3s;
   }
 
+  .helper-text{
+    text-align: left;
+    margin-top:25px;
+    font-size:1.6rem;
+  }
+
   input:active{
     background-color: #ddd;
   }
@@ -119,6 +138,10 @@ export default {
     color: var(--light-text-color);
     font-weight: 800;
     text-align: left;    
+  }
+
+  h3{
+    color: var(--light-text-color);
   }
 @media screen and (max-width: 600px){
   .state{
@@ -149,6 +172,9 @@ export default {
     margin-bottom:10px;
     width:100%;
     
+  }
+  .helper-text{
+    font-size:1rem;
   }
 }
 @media screen and (max-width: 400px){

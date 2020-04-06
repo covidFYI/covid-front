@@ -4,10 +4,11 @@
         <p class = "heading">{{data.name}}</p>
         <p class = "district" >{{data.district}}</p>
         <div class = "contact-details">
-            <p><a v-bind:href="'mailto:' + data.email_id_1 " v-if="data.email_id_1" class = "email">{{data.email_id_1}}</a></p>
+            <p><a v-bind:href="'mailto:' + data.email_id_1 " v-if="data.email_id_1" class = "email">email</a></p>
             <p>
             <a v-bind:href="'tel:'+data.phone_1" v-if="data.phone_1" class = "phone">{{data.phone_1}}</a>
             </p>
+            <a class = "source-link" :href="data.source_link" target="_blank" >Source Link</a>
         </div>
         <div class="contact-icons">
           <a v-bind:href="'mailto:' + data.email_id_1 " v-if="data.email_id_1"><img src="../assets/email.svg" class="icon"></a>
@@ -70,16 +71,19 @@ export default {
     color: var(--dark-text-color);
     margin-top: 8px;
   }
-
+.source-link{
+  font-size:12px;
+  margin-top:6px;
+}
   .contact-details{
-      margin-top:15px;
+      margin-top:8px;
       font-size: 18px;
       word-wrap: break-word;
   }
   
     .email{
         color: var(--primary-color);
-        font-size: 16px;
+        font-size: 20px;
         text-decoration: none;
         font-weight: 800;
     }          
@@ -103,13 +107,16 @@ export default {
       font-size: 12px;
     }
     .email{
-      font-size: 10px;
+      font-size: 14px;
     }
     .contact-icons{
       display:none;
     }
     .phone{
-      font-size: 12px;
+      font-size: 14px;
+    }
+    .source-link{
+      font-size:12px;
     }
     main{
       height: 200px;
@@ -120,9 +127,6 @@ export default {
     }
   }
   @media screen and (max-width:360px){
-    .email{
-      font-size: 10px;
-    }   
     main{
       height: 200px;
       width: 140px;
