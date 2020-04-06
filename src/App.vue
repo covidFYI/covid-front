@@ -32,8 +32,7 @@
       <div class = "menu"> 
         <a href="">About Us</a>
         <router-link to="/contact">Contact us</router-link>
-        <a href="">Developer</a>
-        <a href="">Help</a>
+        <router-link to="/partner">Partner</router-link>
       </div> 
       <div class="liscence">
         
@@ -46,7 +45,7 @@
         </div>
       </div>
       <div class="footer-sm-menu">
-        <a href="">About Us</a>&nbsp;&nbsp;
+        <router-link to="/partner">Partner</router-link>&nbsp;&nbsp;&nbsp;
         <router-link to="/contact" >Contact</router-link>
       </div>
       </div>
@@ -85,7 +84,7 @@ nav{
   justify-content: space-between;
   align-items: center;
   background: var(--light-background-color);
-  padding: 40px;
+  padding: 30px 20px 30px 20px;
   
 }
 .footer-sm{
@@ -117,12 +116,12 @@ nav{
   color: var(--light-text-color);
 }
 .helpline-head{
-  font-size: 28px;
+  font-size: 24px;
   color: var(--light-text-color);
   font-weight: 800;
 }
 .helpline-num{
-  font-size: 26px;
+  font-size: 22px;
   text-decoration: none;
   color: var(--primary-color);
 }
@@ -166,7 +165,8 @@ footer{
 }
 
 .footer-sm-menu{
-  font-size: 12px;
+  font-size: 16px;
+  margin-top:5px;
 }
 
 @media screen and (max-width:600px){
@@ -208,6 +208,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
   }
   footer{
     padding:30px;

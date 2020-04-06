@@ -119,10 +119,14 @@ export default {
       padding:8px;
     }
   }
-  @media screen and (max-width:400px){
+  @media screen and (max-width:360px){
     .email{
       font-size: 10px;
-      
+    }   
+    main{
+      height: 200px;
+      width: 140px;
+       
     }
   }
 </style>
