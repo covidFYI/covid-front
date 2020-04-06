@@ -32,6 +32,7 @@ export default {
     padding: 80px 50px 80px 50px;
     text-align: left;
     background: var(--dark-background-color);
+    
 }
 .heading{
     font-size: 24px;
@@ -40,6 +41,7 @@ export default {
 }
 .kwes-form{
     margin-top:30px;
+    
 }
 input{
     width:70vw;
@@ -49,7 +51,7 @@ input{
     font-size:1rem;
     font-family: objektiv-mk3;
     border-radius: 8px;
-    
+    margin-bottom: 10px;
     box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.5);
     color: #353535;
 }
@@ -59,8 +61,6 @@ textarea{
     font-family: objektiv-mk3;
     padding:15px;
     font-size:1rem;
-    margin: 20px;
-    margin-left:0;
     margin-bottom: 0;
     border-radius: 8px;
     
