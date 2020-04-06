@@ -126,6 +126,7 @@ export default {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 4rem;
+    justify-items:center;
   }
 
   @keyframes pulse {

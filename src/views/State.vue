@@ -92,6 +92,7 @@ export default {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 4rem;
+    justify-items:center;
   }
   
   input{
@@ -136,7 +137,7 @@ export default {
     margin-top:10px;
     
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1.8rem;
+    grid-gap: 1.5rem;
     text-align: center;
   }
   input{
@@ -156,4 +157,5 @@ export default {
     grid-gap:.7rem;
   }
 }
+
 </style>

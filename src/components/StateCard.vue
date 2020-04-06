@@ -57,5 +57,17 @@ export default {
       border-radius: 4px;
     }
   }
+    @media screen and (max-width:350px){
+    .name{
+      font-size: 14px;
+    }
+    main{
+      height: 70px;
+      width: 145px;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+      border-radius: 4px;
+    }
+    
+  }
   
 </style>

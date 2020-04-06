@@ -3,7 +3,7 @@
     <img src="../assets/logo.svg" v-show="!loaded" id="logo">
     
     
-    <div class = "heading" v-show="loaded">What may we help you find today?</div>
+    <div class = "heading" v-show="loaded">What shall we help you find today?</div>
       <div class = "info-grid">
       <InfoTypeCard
         v-for="(type, index) in infotypes"
@@ -88,7 +88,7 @@ export default {
   }
   .heading{
     color: var(--light-text-color);
-    font-size: 32px;
+    font-size: 30px;
     text-align: left;
     font-weight: 800;
     margin-bottom:50px;
@@ -98,6 +98,7 @@ export default {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 4rem;
+    justify-items:center;
   }
   
 
@@ -111,9 +112,9 @@ export default {
   }
   .info-grid{
     margin-top:10px;
-    grid-gap:1.5rem;
-    grid-template-columns: 1fr 1fr;
     
+    grid-template-columns: 1fr 1fr;
+    grid-gap:1rem;
     text-align: center;
   }
   
