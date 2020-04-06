@@ -102,7 +102,7 @@ export default {
     box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.5);
     color: #353535;
     font-size: 28px;
-    font-family: Avenir;
+    font-family: objektiv-mk3;
     padding:20px;
     transition: 0.3s;
   }

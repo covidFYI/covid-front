@@ -8,7 +8,7 @@
         <div class = "breadcrumb">
           <router-link to="/">Home</router-link> >
           <router-link :to="{name: 'State', query:{type: currentType } }">State</router-link>
-          <span> > {{currentType}} </span>
+          <span> > {{mapLabels(currentType)}} </span>
         </div>
          <div class="info-grid">
         
@@ -82,6 +82,16 @@ export default {
   methods: {
     scrollToTop: function(){
       window.scrollTo(0,0);
+    },
+    mapLabels: function(type){
+      const mappings = {
+        'Doctor':'Doctors',
+        'Helpline': 'Helpline Numbers',
+        'Laboratory - Private':'Labs - Pvt',
+        'Laboratory - Government': 'Labs - Govt',
+        'Government': 'Government Officers'
+      }
+      return (mappings[type] ? mappings[type] : type);
     }
   }
 };
@@ -137,7 +147,7 @@ export default {
   }
   
   .breadcrumb{
-    font-size:20px;
+    font-size:18px;
   }
   .info-grid{
     

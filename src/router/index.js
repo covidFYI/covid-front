@@ -23,6 +23,12 @@ const routes = [
       import("../views/Record.vue")
   },
   {
+    path: "/contact",
+    name: "Contact",
+    component: () =>
+      import("../views/Contact.vue")
+  },
+  {
     path: "/*",
     name: "NotFound",
     component: () =>
