@@ -4,10 +4,10 @@
     Facing any problems with the platform? Let us know!
     </h1>
     <router-link  to="/partner">Looking to partner with us? Click here.</router-link>
-    <div class="kwes-form">
+    <div class="kwes-form" v-show="loaded">
     <form method="POST" action="https://kwes.io/api/foreign/forms/jofKkskII5ow1upSICAx">
         <div><input type="text" name="name" rules="max:255" placeholder = "What's your name?"></div>
-        <div><textarea name="message" placeholder="Type your message here..."></textarea></div>
+        <div><textarea name="message" placeholder="Type your message here..." rules="required"></textarea></div>
         <button type="submit">Submit</button>
     </form>
     </div>
@@ -19,10 +19,16 @@
 
 export default {
   name: "Contact",
-  created(){
+  data: function(){
+      return {
+          loaded: false
+      }
+  },
+  mounted(){
     let kwesScript = document.createElement('script')
-    recaptchaScript.setAttribute('src', 'https://kwes.io/js/kwes.js')
-    document.head.appendChild(kwes)
+    kwesScript.setAttribute('src', 'https://kwes.io/js/kwes.js')
+    document.head.appendChild(kwesScript)
+    this.loaded = true;
   }
 };
 </script>
