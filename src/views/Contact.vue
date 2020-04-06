@@ -8,7 +8,7 @@
     <form method="POST" action="https://kwes.io/api/foreign/forms/jofKkskII5ow1upSICAx">
         <div><input type="text" name="name" rules="max:255" placeholder = "What's your name?"></div>
         <div><textarea name="message" placeholder="Type your message here..." rules="required"></textarea></div>
-        <button type="submit">Submit</button>
+        <button type="submit">Send</button>
     </form>
     </div>
   </div>
