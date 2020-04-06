@@ -2,7 +2,7 @@
   <router-link tag="main" :to="{ name: 'State', query : { type : name} }">
     <div class="content">
       
-        <p :class = "{name: true, active:active}">{{name}}</p>
+        <p :class = "{name: true, active:active}">{{mapLabels(name)}}</p>
         
       
     </div>
@@ -21,8 +21,16 @@ export default {
     }
   },
   methods: {
-    
-    
+    mapLabels: function(type){
+      const mappings = {
+        'Doctor':'Doctors',
+        'Helpline': 'Helpline Numbers',
+        'Laboratory - Private':'Labs - Pvt',
+        'Laboratory - Government': 'Labs - Govt',
+        'Government': 'Government Officers'
+      }
+      return (mappings[type] ? mappings[type] : type);
+    }
   }
 };
 </script>
