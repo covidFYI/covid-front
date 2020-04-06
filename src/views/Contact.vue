@@ -70,12 +70,12 @@ textarea{
 
 button{
     margin: 20px;
-    color: #353535;
+    color: #fff;
     margin-left:0;
     margin-bottom: 0;
     font-family: objektiv-mk3;
-    border:3px solid #353535;
-    background:#fff;
+    border:2px solid #353535;
+    background:var(--primary-color);
     border-radius: 8px;
     box-shadow: none;
     font-weight: bold;
