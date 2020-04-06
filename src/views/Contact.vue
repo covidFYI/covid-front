@@ -4,11 +4,11 @@
     Facing any problems with the platform? Let us know!
     </h1>
     <router-link  to="/partner">Looking to partner with us? Click here.</router-link>
-    <div class="kwes-form">
+    <div class="kwes-form" v-show="loaded">
     <form method="POST" action="https://kwes.io/api/foreign/forms/jofKkskII5ow1upSICAx">
         <div><input type="text" name="name" rules="max:255" placeholder = "What's your name?"></div>
-        <div><textarea name="message" placeholder="Type your message here..."></textarea></div>
-        <button type="submit">Submit</button>
+        <div><textarea name="message" placeholder="Type your message here..." rules="required"></textarea></div>
+        <button type="submit">Send</button>
     </form>
     </div>
   </div>
@@ -19,10 +19,16 @@
 
 export default {
   name: "Contact",
-  created(){
+  data: function(){
+      return {
+          loaded: false
+      }
+  },
+  mounted(){
     let kwesScript = document.createElement('script')
-    recaptchaScript.setAttribute('src', 'https://kwes.io/js/kwes.js')
-    document.head.appendChild(kwes)
+    kwesScript.setAttribute('src', 'https://kwes.io/js/kwes.js')
+    document.head.appendChild(kwesScript)
+    this.loaded = true;
   }
 };
 </script>
@@ -32,6 +38,7 @@ export default {
     padding: 80px 50px 80px 50px;
     text-align: left;
     background: var(--dark-background-color);
+    
 }
 .heading{
     font-size: 24px;
@@ -40,6 +47,7 @@ export default {
 }
 .kwes-form{
     margin-top:30px;
+    
 }
 input{
     width:70vw;
@@ -49,7 +57,7 @@ input{
     font-size:1rem;
     font-family: objektiv-mk3;
     border-radius: 8px;
-    
+    margin-bottom: 10px;
     box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.5);
     color: #353535;
 }
@@ -59,8 +67,6 @@ textarea{
     font-family: objektiv-mk3;
     padding:15px;
     font-size:1rem;
-    margin: 20px;
-    margin-left:0;
     margin-bottom: 0;
     border-radius: 8px;
     
