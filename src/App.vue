@@ -30,8 +30,8 @@
     
     <footer>
       <div class = "menu"> 
-        <a href="">About Us</a>
         <router-link to="/contact">Contact us</router-link>
+        <router-link to="/about">About us</router-link>
         <router-link to="/partner">Partner</router-link>
       </div> 
       <div class="liscence">
@@ -46,6 +46,7 @@
       </div>
       <div class="footer-sm-menu">
         <router-link to="/partner">Partner</router-link>&nbsp;&nbsp;&nbsp;
+        <router-link to="/about">About us</router-link>
         <router-link to="/contact" >Contact</router-link>
       </div>
       </div>
