@@ -1,16 +1,16 @@
 <template>
-  <div class="home">
+  <div class="home page">
     <img src="../assets/logo.svg" v-show="!loaded" id="logo">
     
     
     <div class = "heading" v-show="loaded">What shall we help you find today?</div>
       <div class = "info-grid">
-      <InfoTypeCard
-        v-for="(type, index) in infotypes"
-        v-bind:name="type"
-        v-bind:key="index"
-      >
-      </InfoTypeCard>
+        <InfoTypeCard
+          v-for="(type, index) in infotypes"
+          v-bind:name="type"
+          v-bind:key="index"
+        >
+        </InfoTypeCard>
       </div>
     
   </div>

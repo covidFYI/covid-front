@@ -1,5 +1,5 @@
 <template>
-  <div class="state">
+  <div class="state page">
     <div class = "breadcrumb">
     <router-link to="/">Home</router-link> 
     <span> > State </span>

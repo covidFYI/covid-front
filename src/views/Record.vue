@@ -1,5 +1,5 @@
 <template>
-    <div class="state" :class="{left: loaded}">
+    <div class="record page" :class="{left: loaded}">
       <img src="../assets/logo.svg" v-show="!loaded" id="logo">
 
       
@@ -106,7 +106,7 @@ export default {
     margin:auto;
     animation: pulse 2s cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
   }
-  .state{
+  .record{
     background-color: var(--dark-background-color);
     padding: 80px 50px 80px 50px;
     color: white;
@@ -145,7 +145,7 @@ export default {
     }
   }
   @media screen and (max-width: 600px){
-  .state{
+  .record{
     padding: 20px 12.5px 20px 12.5px;
   }
   

@@ -80,7 +80,7 @@
   display: flex;
   flex-direction: column;
 }
-.home, .state, .NotFound, .partner, .contact{
+.page{
   flex:10;
 } 
 nav{

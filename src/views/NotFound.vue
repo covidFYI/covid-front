@@ -1,5 +1,5 @@
 <template>
-  <div class="NotFound">
+  <div class="NotFound page">
     <h1>404,</h1>
     <h1>Nothing to see here.</h1>
     <router-link class = "home-link" tag = "div" to="/">

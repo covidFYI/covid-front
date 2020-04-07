@@ -1,5 +1,5 @@
 <template>
-  <div class="contact">
+  <div class="contact page">
     <h1 class="heading">
     Facing any problems with the platform? Let us know!
     </h1>

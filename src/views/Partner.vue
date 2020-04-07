@@ -1,5 +1,5 @@
 <template>
-  <div class="partner">
+  <div class="partner page">
     <h1>Partner With Us</h1>
     <p class="secondary-text">
         We are looking for public and private organizations to partner with, in order to help people access healthcase related information and services. Please get in touch with us at <a href="mailto:contact@covidfyi.in">contact@covidfyi.in</a> to learn more about any of the following (or more ways) to partner.
