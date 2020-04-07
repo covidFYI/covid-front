@@ -29,7 +29,7 @@ export default {
       infotypes: [],
       respData: [],
       URL: 'https://covid-fyi-backend-2.herokuapp.com/api/v1/covidfyi/',
-      //URL: 'http://127.0.0.1:8000/api/v1/covidfyi/',
+      updateDurationMinutes: 120,
       loaded:false
     }
   },
@@ -37,26 +37,51 @@ export default {
     InfoTypeCard
   },
   created(){
-    if(!JSON.parse(localStorage.getItem('visited'))){
+    if(!JSON.parse(localStorage.getItem('visited')) || this.timeLimitExpired()){
       axios.get(`${this.URL}info_types/`)
       .then(resp => {
+      
         localStorage.setItem('states', JSON.stringify(resp.data));        
         localStorage.setItem('visited', 'true');
+      
+        const now = new Date();
+        localStorage.setItem('lastUpdated', JSON.stringify(now))
+        
         this.infotypes = resp.data.map(el => el.info_type);
+      
       }).catch(err => {
+      
         alert(err)
+      
       })
     }else{
+      
       const data = JSON.parse(localStorage.getItem('states'));
       this.infotypes = data.map(el => el.info_type);
+    
     }
+    
     this.loaded = true;
     this.scrollToTop();
   
   },
   methods: {
+    
     scrollToTop: function(){
       window.scrollTo(0,0);
+    },
+
+    timeLimitExpired: function(){
+      if(JSON.parse(localStorage.getItem('lastUpdated'))){
+        const lastUpdated = new Date(JSON.parse(localStorage.getItem('lastUpdated')));
+        const now = new Date();
+         
+        let diff = Math.round(((now-lastUpdated))/1000)/60;
+        return (diff > this.updateDurationMinutes); 
+        
+      }else{
+        return true;
+      }
     }
   }
 };
