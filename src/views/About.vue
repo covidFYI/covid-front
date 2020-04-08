@@ -18,48 +18,12 @@
           </p>
       <h1>Meet the team</h1>
       <div class="team-grid">
-          <div class = "card">
-              <div class="img-circle"></div>
-              <div class="name">Member Name</div>
-              <a href="#">LinkedIn</a>
+          <div class = "card" v-for="(member,i) in team" :key="i">
+              <img class="img-circle" :src="member.img">
+              <div class="name">{{member.name}}</div>
+              <a :href="member.link">LinkedIn</a>
               <div class="details">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, ea harum. Fugit ad laboriosam est nesciunt odio in quo, deleniti iure illo cum tenetur, error veniam numquam distinctio sequi ipsam.
-              </div>
-          </div>
-          <div class = "card">
-              <div class="img-circle"></div>
-              <div class="name">Member Name</div>
-              <a href="#">LinkedIn</a>
-              <div class="details">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, ea harum. Fugit ad laboriosam est nesciunt odio in quo, deleniti iure illo cum tenetur, error veniam numquam distinctio sequi ipsam.
-              </div>
-          </div><div class = "card">
-              <div class="img-circle"></div>
-              <div class="name">Member Name</div>
-              <a href="#">LinkedIn</a>
-              <div class="details">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, ea harum. Fugit ad laboriosam est nesciunt odio in quo, deleniti iure illo cum tenetur, error veniam numquam distinctio sequi ipsam.
-              </div>
-          </div><div class = "card">
-              <div class="img-circle"></div>
-              <div class="name">Member Name</div>
-              <a href="#">LinkedIn</a>
-              <div class="details">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, ea harum. Fugit ad laboriosam est nesciunt odio in quo, deleniti iure illo cum tenetur, error veniam numquam distinctio sequi ipsam.
-              </div>
-          </div><div class = "card">
-              <div class="img-circle"></div>
-              <div class="name">Member Name</div>
-              <a href="#">LinkedIn</a>
-              <div class="details">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, ea harum. Fugit ad laboriosam est nesciunt odio in quo, deleniti iure illo cum tenetur, error veniam numquam distinctio sequi ipsam.
-              </div>
-          </div><div class = "card">
-              <div class="img-circle"></div>
-              <div class="name">Member Name</div>
-              <a href="#">LinkedIn</a>
-              <div class="details">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, ea harum. Fugit ad laboriosam est nesciunt odio in quo, deleniti iure illo cum tenetur, error veniam numquam distinctio sequi ipsam.
+                  {{member.details}}
               </div>
           </div>
       </div>
@@ -70,7 +34,123 @@
 
 export default {
   name: "partner",
-  
+  data: function(){
+      return {
+          team: [
+              {
+                  name: 'Simran Soni',
+                  img: '',
+                  link:'linkedin.com/in/simransoni',
+                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+              },
+              {
+                  name: 'Sujit Joshi',
+                  img: '',
+                  link:'linkedin.com/in/sujitjoshi00',
+                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+              },
+              {
+                  name: 'Avinash Sivan',
+                  img: '',
+                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
+                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+              },{
+                  name: 'G Rohit',
+                  img: '',
+                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
+                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+              },{
+                  name: 'Tejas Arlimatti',
+                  img: '',
+                  link:'https://www.linkedin.com/in/tejas-arlimatti/',
+                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+              },{
+                  name: 'Manan Gouhari',
+                  img: '',
+                  link:'https://www.linkedin.com/in/manan-gouhari-202b9b1a3',
+                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+              },{
+                  name: 'Kedar Anavardekar',
+                  img: '',
+                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
+                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+              },{
+                  name: 'Rohit Nair',
+                  img: '',
+                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
+                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+              },{
+                  name: 'Yogesh Bhatt',
+                  img: '',
+                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
+                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+              },{
+                  name: 'Akarsh',
+                  img: '',
+                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
+                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+              },{
+                  name: 'Zeeshan',
+                  img: '',
+                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
+                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+              },{
+                  name: 'Aaron',
+                  img: '',
+                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
+                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+              },{
+                  name: 'Tanmay Mundra',
+                  img: '',
+                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
+                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+              },{
+                  name: 'Utkarsh',
+                  img: '',
+                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
+                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+              },{
+                  name: 'Aliasgar',
+                  img: '',
+                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
+                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+              },{
+                  name: 'Vedika',
+                  img: '',
+                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
+                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+              },{
+                  name: 'Abhay',
+                  img: '',
+                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
+                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+              },{
+                  name: 'Prateek',
+                  img: '',
+                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
+                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+              },{
+                  name: 'Abhishek',
+                  img: '',
+                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
+                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+              },{
+                  name: 'Nikita',
+                  img: '',
+                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
+                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+              },{
+                  name: 'Isha',
+                  img: '',
+                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
+                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+              },
+          ]
+      }
+  },
+  mounted(){
+      window.scrollTo(0,0);
+  }
 };
 </script>
 
@@ -127,6 +207,9 @@ strong{
     background: var(--primary-color);
     width: 200px;
     height:200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
 .name{
     font-size: 22px;

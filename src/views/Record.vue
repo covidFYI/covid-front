@@ -7,17 +7,18 @@
 
         <div class = "breadcrumb">
           <router-link to="/">Home</router-link> >
-          <router-link :to="{name: 'State', query:{type: currentType } }">State</router-link>
+          <router-link  :to="{name: 'State', query:{type: currentType } }">State</router-link>
           <span> > {{mapLabels(currentType)}} </span>
         </div>
          <div class="info-grid">
         
-          <EntryCard 
-          v-for="entry in entries" 
-          v-bind:key="entry.id"
-          v-bind:data="entry"
-          >  
-          </EntryCard>
+            <EntryCard 
+            v-for="entry in entries" 
+            v-bind:key="entry.id"
+            v-bind:data="entry"
+            v-bind:state="state"
+            >  
+            </EntryCard>
            </div>
         </div>  
      
@@ -62,6 +63,7 @@ export default {
             }  
           } 
         }
+        
         return l;
       }
       return [];

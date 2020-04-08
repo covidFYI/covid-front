@@ -72,8 +72,8 @@ export default {
     }else{
       data = JSON.parse(localStorage.getItem('states'))
     }
-    this.states = data.filter(el => el.info_type === this.currentType)
-    console.log(this.states);
+    this.states = data.filter(el => el.info_type.name === this.currentType)
+    
     this.states = this.states[0]['states'];
     this.scrollToTop();
   },

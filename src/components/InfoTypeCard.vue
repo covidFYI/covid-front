@@ -2,8 +2,8 @@
   <router-link tag="main" :to="{ name: 'State', query : { type : name} }">
     <div class="content">
         
-        <p class = "name">{{mapLabels(name)}}</p>
-        <p class="description">{{getDesc(name)}}</p>
+        <p class = "name">{{name}}</p>
+        <p class="description">{{description}}</p>
       
     </div>
   
@@ -14,33 +14,14 @@
 <script>
 export default {
   name: "InfoTypeCard",
-  props: ['name'],
+  props: ['name', 'description'],
   data: function(){
     return {
       active: false
     }
   },
   methods: {
-    mapLabels: function(type){
-      const mappings = {
-        'Doctor':'Doctors',
-        'Helpline': 'Helpline Numbers',
-        'Laboratory - Private':'Labs - Pvt',
-        'Laboratory - Government': 'Labs - Govt',
-        'Government': 'Government Officers'
-      }
-      return (mappings[type] ? mappings[type] : type);
-    },
-    getDesc: function(type){
-      const mappings = {
-        'Doctor':'Doctors are available on call',
-        'Helpline': 'Helpline numbers for several states',
-        'Laboratory - Private':'Private laboratories conducting COVID-19 testing',
-        'Laboratory - Government': 'Government laboratories conducting COVID-19 testing',
-        'Government': 'Government officers throughout the nation'
-      }
-      return (mappings[type] ? mappings[type] : '');
-    }
+    
     
   }
 };

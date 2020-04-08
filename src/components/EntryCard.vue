@@ -1,14 +1,16 @@
 <template>
   <main>
     <div class="content">
-        <p class = "heading">{{data.name}}</p>
+        <p class = "heading" v-if="data.name" >{{data.name}}</p>
+        <p class = "heading" v-else>{{state}}</p>
         <p class = "district" >{{data.district}}</p>
+        <a class = "source-link" :href="data.source_link" target="_blank" v-show="data.source_link_valid">Source Link</a>
+            <p class="source-link" v-show="!data.source_link_valid">{{data.source}}</p>
         <div class = "contact-details">
             <p><a v-bind:href="'mailto:' + data.email_id_1 " v-if="data.email_id_1" class = "email">email</a></p>
             <p>
             <a v-bind:href="'tel:'+data.phone_1" v-if="data.phone_1" class = "phone">{{data.phone_1}}</a>
             </p>
-            <a class = "source-link" :href="data.source_link" target="_blank" >Source Link</a>
         </div>
         <div class="contact-icons">
           <a v-bind:href="'mailto:' + data.email_id_1 " v-if="data.email_id_1"><img src="../assets/email.svg" class="icon"></a>
@@ -22,14 +24,13 @@
 <script>
 export default {
   name: "EntryCard",
-  props: ['data'],
+  props: ['data', 'state'],
   data: function(){
     return {
       
     }
   },
-  methods: {
-    
+  created(){
     
   }
 };
@@ -62,7 +63,7 @@ export default {
   
 
   .heading{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 800;
     color: var(--light-text-color);
   }  

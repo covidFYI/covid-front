@@ -3,11 +3,12 @@
     <img src="../assets/logo.svg" v-show="!loaded" id="logo">
     
     
-    <div class = "heading" v-show="loaded">What shall we help you find today?</div>
+    <div class = "heading" v-show="loaded">What are you looking for today?</div>
       <div class = "info-grid">
         <InfoTypeCard
           v-for="(type, index) in infotypes"
-          v-bind:name="type"
+          v-bind:name="type.name"
+          v-bind:description="type.description"
           v-bind:key="index"
         >
         </InfoTypeCard>
@@ -29,7 +30,7 @@ export default {
       infotypes: [],
       respData: [],
       URL: 'https://covid-fyi-backend-2.herokuapp.com/api/v1/covidfyi/',
-      updateDurationMinutes: 120,
+      updateDurationMinutes: 1,
       loaded:false
     }
   },
@@ -57,7 +58,7 @@ export default {
     }else{
       
       const data = JSON.parse(localStorage.getItem('states'));
-      this.infotypes = data.map(el => el.info_type);
+      this.infotypes = data.filter(el => el.info_type.active).map(el => el.info_type);
     
     }
     

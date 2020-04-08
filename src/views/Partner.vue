@@ -32,7 +32,12 @@
 
 export default {
   name: "partner",
-  
+  methods: {
+     
+  },
+  created(){
+     window.scrollTo(0,0);
+  }
 };
 </script>
 
