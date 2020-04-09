@@ -27,7 +27,7 @@ The team is driven by the core belief that Government, Healthsector's resources
           <div class = "card" v-for="(member,i) in team" :key="i">
               <img class="img-circle" :src="member.img">
               <div class="name">{{member.name}}</div>
-              <a :href="member.link">LinkedIn</a>
+              <a :href="member.link" target = "_blank">LinkedIn</a>
               <div class="details">
                   {{member.details}}
               </div>
@@ -46,7 +46,7 @@ export default {
               {
                   name: 'Simran Soni',
                   img: 'https://i.postimg.cc/43wYF5x3/e1022211-c248-414f-af10-d36352762c5a.png',
-                  link:'linkedin.com/in/simransoni',
+                  link:'https://www.linkedin.com/in/simransoni/',
                   details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
               },
               {
@@ -178,7 +178,7 @@ strong{
 .team-grid{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
-    gap: 3rem;
+    gap: 3.5rem;
     justify-items:center;
     margin-top: 20px;
 }
