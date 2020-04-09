@@ -75,6 +75,7 @@ export default {
     this.states = data.filter(el => el.info_type.name === this.currentType)
     
     this.states = this.states[0]['states'];
+    
     this.scrollToTop();
   },
   methods: {

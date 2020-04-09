@@ -90,11 +90,11 @@ export default {
     },
     mapLabels: function(type){
       const mappings = {
-        'Doctor':'Doctors',
+        'Doctor':'Dial a Doctor',
         'Helpline': 'Helpline Numbers',
-        'Laboratory - Private':'Labs - Pvt',
-        'Laboratory - Government': 'Labs - Govt',
-        'Government': 'Government Officers'
+        'Laboratory': 'Testing Facilities',
+        'Government': 'Reach Task-Force',
+        'Hospitals': 'Find Hospitals Nearby'
       }
       return (mappings[type] ? mappings[type] : type);
     }

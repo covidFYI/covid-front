@@ -8,19 +8,19 @@
         <div class="card">
             <div class="card-head">Product Integrations</div>
             <div class="card-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptates delectus deleniti numquam saepe quidem facere eos laudantium placeat eius?
+                Have a product that needs pre-verified data or other consolidated information? Looking for a thriving well-established platform to integrate your creation for the people? Need a quick chat to ideate and build quick solutions? We are the perfect choice for you!
             </div>
         </div>
         <div class="card">
             <div class="card-head">Feature Us</div>
             <div class="card-body">
-                Help us form new connections and reach more people, press releases, social media, get the word out about this central location to get all the info you need, to beat COVID-19.
+                You came here only because you saw and liked what we did. Help us form new connections and reach more people, by mentioning us in the press media and your social network. Stop people from wasting precious time searching for crucial information by pointing us to everyone you know!
             </div>
         </div>
         <div class="card">
             <div class="card-head">Sponsor Us</div>
             <div class="card-body">
-                Dedicated team sorting through tons of data and developing the platform, will need funding to continue our efforts.
+                Impressed by what we can do with zero funding? To survive, sustain and reach a broader audience we need to incur the costs of hosting and developing the platform. We look forward to growing our platform with your backing!
             </div>
         </div>
     </div>

@@ -9,6 +9,7 @@
           v-for="(type, index) in infotypes"
           v-bind:name="type.name"
           v-bind:description="type.description"
+          v-bind:icon="type.icon_name"
           v-bind:key="index"
         >
         </InfoTypeCard>
@@ -38,6 +39,9 @@ export default {
     InfoTypeCard
   },
   created(){
+    let faScript = document.createElement('script')
+    faScript.setAttribute('src', 'https://kit.fontawesome.com/525c03e75b.js')
+    document.head.appendChild(faScript)
     if(!JSON.parse(localStorage.getItem('visited')) || this.timeLimitExpired()){
       axios.get(`${this.URL}info_types/`)
       .then(resp => {
@@ -49,7 +53,7 @@ export default {
         localStorage.setItem('lastUpdated', JSON.stringify(now))
         
         this.infotypes = resp.data.filter(el => el.info_type.active).map(el => el.info_type);
-      
+        
       }).catch(err => {
       
         alert(err)
@@ -64,7 +68,6 @@ export default {
     
     this.loaded = true;
     this.scrollToTop();
-  
   },
   methods: {
     
