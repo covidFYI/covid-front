@@ -1,6 +1,7 @@
 <template>
   <router-link tag="main" :to="{ name: 'State', query : { type : name} }">
     <div class="content">
+        <!-- <i :class="'fas fa-'+icon"></i> -->
         <p class="name">{{description}}</p>
     </div>
   
@@ -11,7 +12,7 @@
 <script>
 export default {
   name: "InfoTypeCard",
-  props: ['name', 'description'],
+  props: ['name', 'description', 'icon'],
   data: function(){
     return {
       active: false

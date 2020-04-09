@@ -56,17 +56,17 @@ export default {
                   details: 'Service designer, UX designer, User Researcher. MDes Designed Objects, School of the Art Institute of Chicago'
               },{
                   name: 'Tejas Arlimatti',
-                  img: '',
+                  img: 'https://i.postimg.cc/jqpSnMF9/bdb36320-4863-4e0d-88a8-024e4286a12f.png',
                   link:'https://www.linkedin.com/in/tejas-arlimatti/',
                   details: 'Backend software developer. Expert in making APIs.'
               },{
                   name: 'Akarsh Jalan',
-                  img: '',
+                  img: 'https://i.postimg.cc/rst7LCGR/0be0d4ea-653b-4a7f-a84f-c93b68477813.png',
                   link:'https://www.linkedin.com/in/akarsh-jalan-80177473/',
                   details: 'Entrepreneur and an Ex Investment banker. Previously worked with Citi Bank and EY'
               },{
                   name: 'Manan Gouhari',
-                  img: '',
+                  img: 'https://i.postimg.cc/KckYY6JB/6fc7aee4-3a90-42fb-a592-4b17826d432b.png',
                   link:'https://www.linkedin.com/in/manan-gouhari-202b9b1a3',
                   details: 'All things software dev. Always looking to solve problems with code.'
               },{
@@ -92,7 +92,7 @@ export default {
                   details: 'UI/UX developer, web enthusiast, tech geek, and a proactive individual who is passionate about computers, technology, and music. He resides in Hyderabad, India.'
               },{
                   name: 'Aaron Abraham',
-                  img: '',
+                  img: 'https://i.postimg.cc/G9wV38z7/7e360f82-cec9-4f67-b645-8bc70751dbf7.png',
                   link:'https://www.linkedin.com/in/aaron-abraham-n-6255b2175',
                   details: 'GRD Coimbatore, B.com, Accounts at Grace on Wheels, Freelance Writer.'
               },{
@@ -122,17 +122,17 @@ export default {
                   details: 'MBBS graduate (BJGMC, Pune). Former medical intern, Sassoon general hospitals.'
               },{
                   name: 'Utkarsh',
-                  img: '',
+                  img: 'https://i.postimg.cc/ZRQXgDNh/b807af29-3d6c-4ce8-a6aa-a304c326cce3.png',
                   link:'https://www.linkedin.com/in/utkarsh-gupta-01',
                   details: 'I am currently pursuing MBA from IIM Kozhikode. I have worked in Panasonic in the field of Electric Vehicles and IOT.'
               },{
                   name: 'Aliasgar',
-                  img: '',
+                  img: 'https://i.postimg.cc/Y9Sh8j6s/empty-profile.png',
                   link:'https://www.linkedin.com/in/aliasgar-kundawala-6aa32a113/',
                   details: ' Market Analyst - FML. BBA - St. Xavier\'s college, Kolkata'
               },{
                   name: 'Prateek Katiyar',
-                  img: '',
+                  img: 'https://i.postimg.cc/8k9bYfyW/353080e8-7417-43da-906d-297ccf1f722e.png',
                   link:'https://www.linkedin.com/mwlite/in/prateek-katiyar-aa0ba373',
                   details: 'MBA, Indian Institute of Management, Kozhikode'
               }
@@ -196,7 +196,7 @@ strong{
 
 .img-circle{
     border-radius: 50%;
-    background: var(--primary-color);
+    border: 2.7px solid var(--primary-color);
     width: 200px;
     height:200px;
     margin-top: 20px;
