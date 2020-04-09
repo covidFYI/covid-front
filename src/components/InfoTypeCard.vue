@@ -1,7 +1,7 @@
 <template>
   <router-link tag="main" :to="{ name: 'State', query : { type : name} }">
     <div class="content">
-        <!-- <i :class="'fas fa-'+icon"></i> -->
+        <i :class="'fas fa-2x '+(icon.includes('fa')?icon: 'fa-'+icon)"></i>
         <p class="name">{{description}}</p>
     </div>
   
@@ -17,12 +17,10 @@ export default {
     return {
       active: false
     }
-  },
-  methods: {
-    
-    
   }
-};
+}
+  
+
 </script>
 
 
@@ -53,11 +51,13 @@ export default {
   }
   .content{
     margin: auto;
+    
   }
   
   .name{
     font-size: 24px;
     color: var(--light-text-color);
+    margin-top:10px;
   }  
 
   .description{

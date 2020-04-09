@@ -53,7 +53,7 @@ export default {
         localStorage.setItem('lastUpdated', JSON.stringify(now))
         
         this.infotypes = resp.data.filter(el => el.info_type.active).map(el => el.info_type);
-      
+        
       }).catch(err => {
       
         alert(err)
@@ -68,7 +68,6 @@ export default {
     
     this.loaded = true;
     this.scrollToTop();
-  
   },
   methods: {
     
