@@ -1,10 +1,7 @@
 <template>
   <router-link tag="main" :to="{ name: 'State', query : { type : name} }">
     <div class="content">
-        
-        <p class = "name">{{name}}</p>
-        <p class="description">{{description}}</p>
-      
+        <p class="name">{{description}}</p>
     </div>
   
   </router-link>

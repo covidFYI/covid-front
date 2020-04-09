@@ -2,21 +2,26 @@
   <div class="about page">
       <h1>UNDER CONSTRUCTION</h1>
       <h1>About us</h1>
-      <p class="secondary-text">
-          We are a group of like minded individuals trying to make information about help on COVID19 crisis in India more accessible.
-      </p>
-      <h3>Why we built CovidFYI?</h3> 
-          <p class="secondary-text">
-              Critical information about COVID-19 crisis management in India is hard to find when needed, is scattered over multiple websites, exists in many forms, and is hard to understand for most people.
-              The scale of this information is such, that new circulars are released every single day at multiple levels of government - National (MOHFW), State (Departments), District (Taluka level) about whom to reach out to, where to go, which helplines to call, emergency contact information, labs, hospitals etc.
-              Having access to real-time, credible information at one place - did not exist, until <strong>CovidFYI</strong> came to the rescue!
+      
+          <p class="secondary-text">  
+          John F. Kennedy once said, “When written in Chinese, the word ‘crisis’ is composed of two characters. One represents danger and the other represents opportunity.”
           </p>
+<p class="secondary-text">
+When our beloved nation was struck by the crisis, not only did we realise the danger that COVID 19 posed to the common man, but we collectively realised the opportunity to come together behind closed doors to address critical issues that the pandemic has bought about.
+</p>
 
-      <h3>Our aim: </h3>
-          <p class="secondary-text">
-              Empower every Indian with the rightful help needed at the right time, all with a click of a button. <br>
-              Empower the government and healthcare sector to focus on more important things like solving this pandemic while we take up the role of preventing chaos and misinformation.
-          </p>
+<h3>Why we spent a sleepless week to build CovidFYI.in?</h3>
+<p class="secondary-text">
+With every government administration body issuing regulations, circulars, important information at central, state, district and taluk level, India is facing an "Information Overload". It was the need of the hour to have a single solution platform that would double up as the "Go-To" website having consolidated information about Hospitals, Doctors, Government services, Helpline number and other vital information.
+</p>
+<h3>Why we strive so hard and what is our Aim?</h3>
+<p class="secondary-text">
+We at <strong>CovidFYI</strong> believe in "Spoon Feeding" easy to understand and find the information very quickly in the need of the hour.
+
+Our focus is at empowering the common man to access information at a click of a button.
+
+The team is driven by the core belief that Government, Healthsector's resources are to be spent on overcoming the pandemic while we battle against misinformation and fake news.
+</p>
       <h1>Meet the team</h1>
       <div class="team-grid">
           <div class = "card" v-for="(member,i) in team" :key="i">
@@ -40,112 +45,97 @@ export default {
           team: [
               {
                   name: 'Simran Soni',
-                  img: '',
+                  img: 'https://i.postimg.cc/43wYF5x3/e1022211-c248-414f-af10-d36352762c5a.png',
                   link:'linkedin.com/in/simransoni',
                   details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
               },
               {
                   name: 'Sujit Joshi',
-                  img: '',
+                  img: 'https://i.postimg.cc/3NnFpJ9x/c225db69-03b7-4da7-a56f-d12792f4b65b.png',
                   link:'linkedin.com/in/sujitjoshi00',
-                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
-              },
-              {
-                  name: 'Avinash Sivan',
-                  img: '',
-                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
-                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
-              },{
-                  name: 'G Rohit',
-                  img: '',
-                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
-                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+                  details: 'Service designer, UX designer, User Researcher. MDes Designed Objects, School of the Art Institute of Chicago'
               },{
                   name: 'Tejas Arlimatti',
                   img: '',
                   link:'https://www.linkedin.com/in/tejas-arlimatti/',
-                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+                  details: 'Backend software developer. Expert in making APIs.'
+              },{
+                  name: 'Akarsh Jalan',
+                  img: '',
+                  link:'https://www.linkedin.com/in/akarsh-jalan-80177473/',
+                  details: 'Entrepreneur and an Ex Investment banker. Previously worked with Citi Bank and EY'
               },{
                   name: 'Manan Gouhari',
                   img: '',
                   link:'https://www.linkedin.com/in/manan-gouhari-202b9b1a3',
-                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
-              },{
-                  name: 'Kedar Anavardekar',
-                  img: '',
-                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
-                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+                  details: 'All things software dev. Always looking to solve problems with code.'
               },{
                   name: 'Rohit Nair',
-                  img: '',
+                  img: 'https://i.postimg.cc/2y1LWZmS/efc9048c-4e93-4b31-a5c2-824f4c639418.png',
+                  link:'https://www.linkedin.com/in/rohitnairtech/',
+                  details: 'Full Stack & ML engineer. Founder @aibuddha.in'
+              },
+              {
+                  name: 'Avinash Sivan',
+                  img: 'https://i.postimg.cc/7YTTY0mB/13fd7bbe-65ac-41ff-85b7-40798b2ca8ce.png',
                   link:'http://linkedin.com/in/avinash-sivan-459168ab',
-                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+                  details: 'A No-nonsense simple UX Designer who loves to craft minimalistic designs. The minimal a design, the maximum an impact'
               },{
-                  name: 'Yogesh Bhatt',
-                  img: '',
-                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
-                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+                  name: 'Zeeshan Fatmi',
+                  img: 'https://www.tracks2travel.com/wp-content/uploads/2020/04/download.png',
+                  link:'https://www.linkedin.com/in/mdzeeshanfatmi/',
+                  details: 'Fighting Fake News | Data & Operations Lead - COVIDFYI | Digital Marketing | SEO | Railfan | AvGeek'
               },{
-                  name: 'Akarsh',
-                  img: '',
-                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
-                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+                  name: 'G Rohit',
+                  img: 'https://i.postimg.cc/v84PxCV8/gr-logo-white.png',
+                  link:'https://www.linkedin.com/in/g-rohit/',
+                  details: 'UI/UX developer, web enthusiast, tech geek, and a proactive individual who is passionate about computers, technology, and music. He resides in Hyderabad, India.'
               },{
-                  name: 'Zeeshan',
+                  name: 'Aaron Abraham',
                   img: '',
-                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
-                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+                  link:'https://www.linkedin.com/in/aaron-abraham-n-6255b2175',
+                  details: 'GRD Coimbatore, B.com, Accounts at Grace on Wheels, Freelance Writer.'
               },{
-                  name: 'Aaron',
-                  img: '',
-                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
-                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+                  name: 'Kedar Anavardekar',
+                  img: 'https://i.postimg.cc/Qt4WVq2z/fa844458-18e6-4740-b8ee-7b37d1c60711.png',
+                  link:'https://www.linkedin.com/in/kedar-anavardekar-24120b44',
+                  details: 'M.Tech, IIT BOMBAY. Trying out how technology can help mankind.'
               },{
                   name: 'Tanmay Mundra',
-                  img: '',
-                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
-                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+                  img: 'https://i.postimg.cc/9Xk7hJtR/c561c20a-b0ce-4904-b908-21d7388dfe84.png',
+                  link:'https://www.linkedin.com/in/tanmay-mundra/',
+                  details: 'Looking for oppurtunities to make the world a better place'
+              },{
+                  name: 'Yogesh Bhatt',
+                  img: 'https://i.postimg.cc/CxGBbYyk/427261e7-ce6b-4948-87f5-058972e2351f.png',
+                  link:'https://www.linkedin.com/in/yogesh-bhatt',
+                  details: 'B.Tech CSE student at Graphic Era University'
+              },{
+                  name: 'Abhishek Hiresave',
+                  img: 'https://i.postimg.cc/sxbQ4gD9/63a70a28-e075-4777-939a-aad061a4cf1d.png ',
+                  link:'https://www.linkedin.com/in/abhishekhv/zhttp://linkedin.com/in/avinash-sivan-459168ab',
+                  details: 'Master Student | RWTH Aachen | Borderless Engineering'
+              },{
+                  name: 'Dr. Vishesh',
+                  img: 'https://i.postimg.cc/KYmKNVFV/30961bce-1953-4c45-9b7a-6e2c0aca873a.png',
+                  link:'http://linkedin.com/in/vishesh-agrawal-10b405175',
+                  details: 'MBBS graduate (BJGMC, Pune). Former medical intern, Sassoon general hospitals.'
               },{
                   name: 'Utkarsh',
                   img: '',
-                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
-                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+                  link:'https://www.linkedin.com/in/utkarsh-gupta-01',
+                  details: 'I am currently pursuing MBA from IIM Kozhikode. I have worked in Panasonic in the field of Electric Vehicles and IOT.'
               },{
                   name: 'Aliasgar',
                   img: '',
-                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
-                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+                  link:'https://www.linkedin.com/in/aliasgar-kundawala-6aa32a113/',
+                  details: ' Market Analyst - FML. BBA - St. Xavier\'s college, Kolkata'
               },{
-                  name: 'Vedika',
+                  name: 'Prateek Katiyar',
                   img: '',
-                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
-                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
-              },{
-                  name: 'Abhay',
-                  img: '',
-                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
-                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
-              },{
-                  name: 'Prateek',
-                  img: '',
-                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
-                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
-              },{
-                  name: 'Abhishek',
-                  img: '',
-                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
-                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
-              },{
-                  name: 'Nikita',
-                  img: '',
-                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
-                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
-              },{
-                  name: 'Isha',
-                  img: '',
-                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
-                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
-              },
+                  link:'https://www.linkedin.com/mwlite/in/prateek-katiyar-aa0ba373',
+                  details: 'MBA, Indian Institute of Management, Kozhikode'
+              }
           ]
       }
   },
@@ -200,6 +190,7 @@ strong{
     padding: 20px;
     text-align: center;
     border-radius: 8px;
+    min-width: 285px;
     background: linear-gradient(136.07deg, #353535 0%, #282828 83%, #222 100%);
 }
 
