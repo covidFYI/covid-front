@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="content">
+    <div class="content" >
         <p class = "heading" v-if="data.name" >{{data.name}}</p>
         <p class = "heading" v-else>{{state}}</p>
         <p class = "district" >{{data.district}}</p>
@@ -24,15 +24,7 @@
 <script>
 export default {
   name: "EntryCard",
-  props: ['data', 'state'],
-  data: function(){
-    return {
-      
-    }
-  },
-  created(){
-    
-  }
+  props: ['data', 'state', 'type']
 };
 </script>
 
@@ -54,6 +46,7 @@ export default {
     text-align: center;
     
   }
+  
   .icon{
     height:50px;
     width:50px;

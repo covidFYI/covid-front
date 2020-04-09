@@ -17,6 +17,7 @@
             v-bind:key="entry.id"
             v-bind:data="entry"
             v-bind:state="state"
+            v-bind:type="currentType"
             >  
             </EntryCard>
            </div>

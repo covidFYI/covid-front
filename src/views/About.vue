@@ -1,5 +1,6 @@
 <template>
   <div class="about page">
+      <h1>UNDER CONSTRUCTION</h1>
       <h1>About us</h1>
       <p class="secondary-text">
           We are a group of like minded individuals trying to make information about help on COVID19 crisis in India more accessible.
