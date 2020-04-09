@@ -30,9 +30,9 @@
     
     <footer>
       <div class = "menu"> 
-        <router-link to="/contact">Contact us</router-link>
-        <router-link to="/about">About us</router-link>
-        <router-link to="/partner">Partner</router-link>
+        <router-link class="lg-links" to="/contact">Contact us</router-link>
+        <router-link class="lg-links" to="/about">About us</router-link>
+        <router-link class="lg-links" to="/partner">Partner</router-link>
       </div> 
       <div class="liscence">
         
@@ -45,9 +45,9 @@
         </div>
       </div>
       <div class="footer-sm-menu">
-        <router-link to="/partner">Partner</router-link>&nbsp;&nbsp;&nbsp;
-        <router-link to="/about">About us</router-link>
-        <router-link to="/contact" >Contact</router-link>
+        <router-link class="ft-link" to="/partner">Partner</router-link>
+        <router-link class="ft-link" to="/about">About us</router-link>
+        <router-link class="ft-link" to="/contact" >Contact</router-link>
       </div>
       </div>
     </footer>
@@ -95,6 +95,14 @@ nav{
 .footer-sm{
   display: none;
   flex: 1;
+}
+.lg-links{
+  text-decoration:none;
+}
+.ft-link{
+  text-decoration: none;
+  margin-left: 5px;
+  margin-right:5px;
 }
 #logo{
   height: 100px;
@@ -174,6 +182,8 @@ footer{
 .footer-sm-menu{
   font-size: 16px;
   margin-top:5px;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media screen and (max-width:600px){

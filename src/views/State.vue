@@ -53,8 +53,8 @@ export default {
       return (this.currentType==='Doctor' || this.currentType==='Government' || this.displayStates.length < 8);
     },
     helperText: function(){
-      if(this.currentType==='Doctor') return 'Hi! As doctors are available on-call, feel free to contact doctors in other states.'
-      else if(this.currentType==='Government') return 'Government officers are nation-wide.'
+      if(this.currentType==='Doctor') return 'Doctors are on-call. Feel free to contact doctors from any states. Please stay tuned, we\'re adding more doctors from different regions by the day'
+    
       else if(this.displayStates.length < 8) return 'Our team is working hard to add more data!'
       
     }

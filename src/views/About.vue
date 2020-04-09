@@ -52,13 +52,13 @@ export default {
               {
                   name: 'Sujit Joshi',
                   img: 'https://i.postimg.cc/3NnFpJ9x/c225db69-03b7-4da7-a56f-d12792f4b65b.png',
-                  link:'linkedin.com/in/sujitjoshi00',
+                  link:'https://www.linkedin.com/in/sujitjoshi00/',
                   details: 'Service designer, UX designer, User Researcher. MDes Designed Objects, School of the Art Institute of Chicago'
               },{
                   name: 'Tejas Arlimatti',
                   img: 'https://i.postimg.cc/jqpSnMF9/bdb36320-4863-4e0d-88a8-024e4286a12f.png',
                   link:'https://www.linkedin.com/in/tejas-arlimatti/',
-                  details: 'Backend software developer. Expert in making APIs.'
+                  details: 'Backend engineer. Scaling my apps and myself up.'
               },{
                   name: 'Akarsh Jalan',
                   img: 'https://i.postimg.cc/rst7LCGR/0be0d4ea-653b-4a7f-a84f-c93b68477813.png',
