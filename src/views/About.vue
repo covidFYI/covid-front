@@ -81,6 +81,11 @@ export default {
                   link:'http://linkedin.com/in/avinash-sivan-459168ab',
                   details: 'A No-nonsense simple UX Designer who loves to craft minimalistic designs. The minimal a design, the maximum an impact'
               },{
+                  name: 'Saathwik Nune',
+                  img: 'https://i.postimg.cc/7YTTY0mB/13fd7bbe-65ac-41ff-85b7-40798b2ca8ce.png',
+                  link:'https://www.linkedin.com/in/saathwik/',
+                  details: 'A Data Scientist and a Visual Designer with M.Sc in Data Science and corporate experience at Eli Lilly Intl. currently pursuing MBA from IIM Kozhikode.'
+              },{
                   name: 'Zeeshan Fatmi',
                   img: 'https://www.tracks2travel.com/wp-content/uploads/2020/04/download.png',
                   link:'https://www.linkedin.com/in/mdzeeshanfatmi/',
@@ -133,7 +138,7 @@ export default {
               },{
                   name: 'Prateek Katiyar',
                   img: 'https://i.postimg.cc/8k9bYfyW/353080e8-7417-43da-906d-297ccf1f722e.png',
-                  link:'https://www.linkedin.com/mwlite/in/prateek-katiyar-aa0ba373',
+                  link:'https://www.linkedin.com/in/prateek-katiyar-aa0ba373',
                   details: 'MBA, Indian Institute of Management, Kozhikode'
               }
           ]
