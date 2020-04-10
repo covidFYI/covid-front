@@ -39,7 +39,7 @@ The team is driven by the core belief that Government, Healthsector's resources
 <script>
 
 export default {
-  name: "partner",
+  name: "about",
   data: function(){
       return {
           team: [
@@ -82,7 +82,7 @@ export default {
                   details: 'A No-nonsense simple UX Designer who loves to craft minimalistic designs. The minimal a design, the maximum an impact'
               },{
                   name: 'Saathwik Nune',
-                  img: 'https://i.postimg.cc/7YTTY0mB/13fd7bbe-65ac-41ff-85b7-40798b2ca8ce.png',
+                  img: 'https://i.postimg.cc/RZ5J3hYv/7397bf11-56ce-48df-bafb-4489a17014a1.png',
                   link:'https://www.linkedin.com/in/saathwik/',
                   details: 'A Data Scientist and a Visual Designer with M.Sc in Data Science and corporate experience at Eli Lilly Intl. currently pursuing MBA from IIM Kozhikode.'
               },{
@@ -94,7 +94,7 @@ export default {
                   name: 'G Rohit',
                   img: 'https://i.postimg.cc/v84PxCV8/gr-logo-white.png',
                   link:'https://www.linkedin.com/in/g-rohit/',
-                  details: 'UI/UX developer, web enthusiast, tech geek, and a proactive individual who is passionate about computers, technology, and music. He resides in Hyderabad, India.'
+                  details: 'UI/UX developer | Web enthusiast | Tech geek'
               },{
                   name: 'Aaron Abraham',
                   img: 'https://i.postimg.cc/G9wV38z7/7e360f82-cec9-4f67-b645-8bc70751dbf7.png',
@@ -132,7 +132,7 @@ export default {
                   details: 'I am currently pursuing MBA from IIM Kozhikode. I have worked in Panasonic in the field of Electric Vehicles and IOT.'
               },{
                   name: 'Aliasgar',
-                  img: 'https://i.postimg.cc/Y9Sh8j6s/empty-profile.png',
+                  img: 'https://i.postimg.cc/rsJNF4Kj/9d781da6-e098-497a-a010-36918ecb9f01.png',
                   link:'https://www.linkedin.com/in/aliasgar-kundawala-6aa32a113/',
                   details: ' Market Analyst - FML. BBA - St. Xavier\'s college, Kolkata'
               },{
