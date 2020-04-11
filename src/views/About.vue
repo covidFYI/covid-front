@@ -7,12 +7,12 @@
           John F. Kennedy once said, “When written in Chinese, the word ‘crisis’ is composed of two characters. One represents danger and the other represents opportunity.”
           </p>
 <p class="secondary-text">
-When our beloved nation was struck by the crisis, not only did we realise the danger that COVID 19 posed to the common man, but we collectively realised the opportunity to come together behind closed doors to address critical issues that the pandemic has bought about.
+When our beloved nation was struck by the crisis, not only did we realise the danger that COVID 19 posed to the common man, but we collectively realised the opportunity to come together behind closed doors to address critical issues that the pandemic has brought about.
 </p>
 
 <h3>Why we spent a sleepless week to build CovidFYI.in?</h3>
 <p class="secondary-text">
-With every government administration body issuing regulations, circulars, important information at central, state, district and taluk level, India is facing an "Information Overload". It was the need of the hour to have a single solution platform that would double up as the "Go-To" website having consolidated information about Hospitals, Doctors, Government services, Helpline number and other vital information.
+With every government administration body issuing regulations, circulars, important information at central, state, district and taluka level, India is facing an "Information Overload". It was the need of the hour to have a single solution platform that would double up as the "Go-To" website having consolidated information about Hospitals, Doctors, Government services, Helpline number and other vital information.
 </p>
 <h3>Why we strive so hard and what is our Aim?</h3>
 <p class="secondary-text">
@@ -118,7 +118,7 @@ export default {
               },{
                   name: 'Abhishek Hiresave',
                   img: 'https://i.postimg.cc/sxbQ4gD9/63a70a28-e075-4777-939a-aad061a4cf1d.png ',
-                  link:'https://www.linkedin.com/in/abhishekhv/zhttp://linkedin.com/in/avinash-sivan-459168ab',
+                  link:'https://www.linkedin.com/in/abhishekhv/',
                   details: 'Master Student | RWTH Aachen | Borderless Engineering'
               },{
                   name: 'Dr. Vishesh',

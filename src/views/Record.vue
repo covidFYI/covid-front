@@ -1,19 +1,24 @@
 <template>
     <div class="record page" :class="{left: loaded}">
-      <img src="../assets/logo.svg" v-show="!loaded" id="logo">
-
       
+      <img src="../assets/logo.svg" v-show="!loaded" id="loader">
         <div class = "content" v-if="loaded" >
-
-        <div class = "breadcrumb">
+        <div class = "breadcrumb-rec">
           <router-link to="/">Home</router-link> >
           <router-link  :to="{name: 'State', query:{type: currentType } }">State</router-link>
           <span> > {{mapLabels(currentType)}} </span>
         </div>
-         <div class="info-grid">
+        <div v-show="currentType=='Doctor'" class="select-drop">
+          <!-- <select v-model="selected">
+            <option value="all">All Specialities</option>
+            <option v-for="(spec,i) in specs" :value="spec" :key="i">{{spec}}</option>
+          </select> -->
+          <v-select  :options="specs" :clearable="false" v-model="selected"></v-select>
+        </div>
+         <div class="rec-grid">
         
             <EntryCard 
-            v-for="entry in entries" 
+            v-for="entry in filteredEntries" 
             v-bind:key="entry.id"
             v-bind:data="entry"
             v-bind:state="state"
@@ -31,6 +36,7 @@
 
 import axios from 'axios';
 import EntryCard from '@/components/EntryCard.vue';
+/* import 'vue-select/dist/vue-select.css'; */
 
 export default {
   name: "Record",
@@ -40,24 +46,25 @@ export default {
       //URL: 'http://127.0.0.1:8000/api/v1/covidfyi/',
       URL: 'https://covid-fyi-backend-2.herokuapp.com/api/v1/covidfyi/',
       loaded: false,
-      data: []
+      data: [],
+      selected:'all'
     }
   },
   components: {
     EntryCard
   },
   computed: {
-    currentType(){
+    currentType: function(){
       return this.$route.query.type?this.$route.query.type: 'Helpline';
     },
-    entries(){
+    entries: function(){
       if(this.loaded){
         let l = [];
         for(let i = 0; i < this.data.length; i++){
           
           for(let j = 0; j < this.data[i].entries.length; j++){     
-            let type = this.data[i].entries[j].infotype;
-            if(type === this.currentType){
+            let t = this.data[i].entries[j].infotype;
+            if(t === this.currentType){
               let entry = this.data[i].entries[j];
               entry.district = this.data[i].district
               l.push(entry);
@@ -68,12 +75,25 @@ export default {
         return l;
       }
       return [];
+    },
+    specs: function(){
+      let specsArr = [];
+      for(let i = 0; i < this.entries.length; i++){
+        if(this.entries[i].dr_name!=='')
+          specsArr.push(this.entries[i].dr_name);
+      }
+      return ['all', ...Array.from(new Set(specsArr))];
+    },
+    filteredEntries: function(){
+      return this.selected==='all'?this.entries: this.entries.filter(el => el.dr_name===this.selected);
     }
        
     
   },
   created(){
-    
+    let faScript = document.createElement('script')
+    faScript.setAttribute('src', 'https://kit.fontawesome.com/525c03e75b.js')
+    document.head.appendChild(faScript)
     this.scrollToTop();
     
     axios.get(`${this.URL}states/${this.state}/`)
@@ -102,8 +122,11 @@ export default {
 };
 </script>
 
-<style scoped>
-  #logo{
+<style >
+  
+  @import 'https://unpkg.com/vue-select@latest/dist/vue-select.css';
+
+  #loader{
     height:200px;
     width: 200px;
     margin:auto;
@@ -119,21 +142,41 @@ export default {
     text-align: left;
   }
 
+  .v-select .vs__search::placeholder,
+  .v-select .vs__dropdown-toggle,
+  .v-select .vs__dropdown-menu {
+    background: var(--light-text-color);
+    border: none;
+    font-size: 1.2rem;
+    text-transform: lowercase;
+    font-variant: small-caps;
+  }
 
-  .breadcrumb{
+  .v-select .vs__clear,
+  .v-select .vs__open-indicator {
+    fill: var(--light-background-color);
+  }
+  
+  
+  .select-drop{
+    margin-top: 20px;
+    width: 85vw;
+  }
+  .breadcrumb-rec{
     font-size: 30px;
     color: var(--light-text-color);
     font-weight: 800;
     text-align: left;    
   }
-  .info-grid{
-    margin-top:50px;
+  
+  .rec-grid{
+    margin-top:30px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 4rem;
     justify-items:center;
   }
-
+  
   @keyframes pulse {
     0%{
       opacity:1;
@@ -147,15 +190,16 @@ export default {
       transform: rotate(0deg);
     }
   }
+
   @media screen and (max-width: 600px){
   .record{
     padding: 20px 12.5px 20px 12.5px;
   }
   
-  .breadcrumb{
+  .breadcrumb-rec{
     font-size:18px;
   }
-  .info-grid{
+  .rec-grid{
     
     margin-top:17px;
     display: grid;
@@ -166,7 +210,7 @@ export default {
   
 }
 @media screen and (max-width:400px){
-  .info-grid{
+  .rec-grid{
     grid-gap:.6rem;
   }
 }
