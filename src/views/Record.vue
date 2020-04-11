@@ -13,7 +13,7 @@
             <option value="all">All Specialities</option>
             <option v-for="(spec,i) in specs" :value="spec" :key="i">{{spec}}</option>
           </select> -->
-          <v-select  :options="specs" :clearable="false" v-model="selected"></v-select>
+          <v-select :options="specs" :clearable="false" v-model="selected"></v-select>
         </div>
          <div class="rec-grid">
         
@@ -145,15 +145,16 @@ export default {
   .v-select .vs__search::placeholder,
   .v-select .vs__dropdown-toggle,
   .v-select .vs__dropdown-menu {
-    background: var(--light-text-color);
-    border: none;
+    background:var(--light-text-color) ;
+    border: 2px solid var(--light-background-color);
     font-size: 1.2rem;
     text-transform: lowercase;
     font-variant: small-caps;
+   
   }
 
-  .v-select .vs__clear,
-  .v-select .vs__open-indicator {
+ .v-select .vs__clear,
+ .v-select .vs__open-indicator {
     fill: var(--light-background-color);
   }
   

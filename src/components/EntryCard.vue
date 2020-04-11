@@ -6,7 +6,7 @@
         <div class = "secondary-text">
           <p class = "speciality" v-show="type='Doctor'">{{data.dr_name}}</p>
           <p class = "district" >{{data.district}}</p>
-<!--           <a class = "source-link" :href="data.source_link" target="_blank" v-show="data.source_link_valid">Source Link</a> -->
+ <a class = "source-link" :href="data.source_link" target="_blank" v-show="data.source_link_valid">Source Link</a> 
           <p class="source-link" v-show="true">{{data.source}}</p>
         </div>
         <div class = "contact-details">
