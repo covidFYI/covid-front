@@ -55,15 +55,20 @@ export default {
                   link:'https://www.linkedin.com/in/sujitjoshi00/',
                   details: 'Service designer, UX designer, User Researcher. MDes Designed Objects, School of the Art Institute of Chicago'
               },{
-                  name: 'Tejas Arlimatti',
-                  img: 'https://i.postimg.cc/jqpSnMF9/bdb36320-4863-4e0d-88a8-024e4286a12f.png',
-                  link:'https://www.linkedin.com/in/tejas-arlimatti/',
-                  details: 'Backend engineer. Scaling my apps and myself up.'
+                  name: 'Eklavya Dahiya',
+                  img: 'https://i.postimg.cc/bwjRZr6X/4175828e-caaf-4652-8b4a-7ffc6c84b2b7.png',
+                  link:'https://www.linkedin.com/in/eklavyadahiya/',
+                  details: 'Self taught full stack developer and pro-bono lawyer. Addicted to problem solving.'
               },{
                   name: 'Akarsh Jalan',
                   img: 'https://i.postimg.cc/rst7LCGR/0be0d4ea-653b-4a7f-a84f-c93b68477813.png',
                   link:'https://www.linkedin.com/in/akarsh-jalan-80177473/',
                   details: 'Entrepreneur and an Ex Investment banker. Previously worked with Citi Bank and EY'
+              },{
+                  name: 'Tejas Arlimatti',
+                  img: 'https://i.postimg.cc/jqpSnMF9/bdb36320-4863-4e0d-88a8-024e4286a12f.png',
+                  link:'https://www.linkedin.com/in/tejas-arlimatti/',
+                  details: 'Backend engineer. Scaling my apps and myself up.'
               },{
                   name: 'Manan Gouhari',
                   img: 'https://i.postimg.cc/KckYY6JB/6fc7aee4-3a90-42fb-a592-4b17826d432b.png',
@@ -81,11 +86,6 @@ export default {
                   link:'http://linkedin.com/in/avinash-sivan-459168ab',
                   details: 'A No-nonsense simple UX Designer who loves to craft minimalistic designs. The minimal a design, the maximum an impact'
               },{
-                  name: 'Saathwik Nune',
-                  img: 'https://i.postimg.cc/RZ5J3hYv/7397bf11-56ce-48df-bafb-4489a17014a1.png',
-                  link:'https://www.linkedin.com/in/saathwik/',
-                  details: 'A Data Scientist and a Visual Designer with M.Sc in Data Science and corporate experience at Eli Lilly Intl. currently pursuing MBA from IIM Kozhikode.'
-              },{
                   name: 'Zeeshan Fatmi',
                   img: 'https://www.tracks2travel.com/wp-content/uploads/2020/04/download.png',
                   link:'https://www.linkedin.com/in/mdzeeshanfatmi/',
@@ -95,6 +95,31 @@ export default {
                   img: 'https://i.postimg.cc/v84PxCV8/gr-logo-white.png',
                   link:'https://www.linkedin.com/in/g-rohit/',
                   details: 'UI/UX developer | Web enthusiast | Tech geek'
+              },{
+                  name: 'Yogesh Bhatt',
+                  img: 'https://i.postimg.cc/CxGBbYyk/427261e7-ce6b-4948-87f5-058972e2351f.png',
+                  link:'https://www.linkedin.com/in/yogesh-bhatt',
+                  details: 'B.Tech CSE student at Graphic Era University'
+              },{
+                  name: 'Samarth Goel',
+                  img: 'https://i.postimg.cc/t42z5g1Z/8f6e67d5-0226-4c11-a48e-e3f61e11b390.png',
+                  link:'https://www.linkedin.com/in/goelsamarth998/',
+                  details: 'Marketing and Management - Double Major (University of Auckland)'
+              },{
+                  name: 'Shanika Goel',
+                  img: 'https://i.postimg.cc/43yQFTt8/88e5d39d-baf9-477a-9263-0b0b862592b5.png',
+                  link:'https://www.linkedin.com/in/shanika-goel-058875124',
+                  details: 'Lawyer in the making, Symbiosis law school.'
+              },{
+                  name: 'Dolly Bhatia',
+                  img: 'https://i.postimg.cc/BvzcrwBJ/fbc5ae4a-4350-4eba-b174-d58530302832.png',
+                  link:'#',
+                  details: 'MBA in HR (Sinhgad business school-Pune) Former HR Executive at Motherson Global Wiring Ltd.  Housewife'
+              },{
+                  name: 'Saathwik Nune',
+                  img: 'https://i.postimg.cc/RZ5J3hYv/7397bf11-56ce-48df-bafb-4489a17014a1.png',
+                  link:'https://www.linkedin.com/in/saathwik/',
+                  details: 'A Data Scientist and a Visual Designer with M.Sc in Data Science and corporate experience at Eli Lilly Intl. currently pursuing MBA from IIM Kozhikode.'
               },{
                   name: 'Aaron Abraham',
                   img: 'https://i.postimg.cc/G9wV38z7/7e360f82-cec9-4f67-b645-8bc70751dbf7.png',
@@ -110,11 +135,6 @@ export default {
                   img: 'https://i.postimg.cc/9Xk7hJtR/c561c20a-b0ce-4904-b908-21d7388dfe84.png',
                   link:'https://www.linkedin.com/in/tanmay-mundra/',
                   details: 'Looking for oppurtunities to make the world a better place'
-              },{
-                  name: 'Yogesh Bhatt',
-                  img: 'https://i.postimg.cc/CxGBbYyk/427261e7-ce6b-4948-87f5-058972e2351f.png',
-                  link:'https://www.linkedin.com/in/yogesh-bhatt',
-                  details: 'B.Tech CSE student at Graphic Era University'
               },{
                   name: 'Abhishek Hiresave',
                   img: 'https://i.postimg.cc/sxbQ4gD9/63a70a28-e075-4777-939a-aad061a4cf1d.png ',
