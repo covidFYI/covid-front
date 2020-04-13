@@ -76,6 +76,7 @@ export default {
       height: 120px;
       width: 160px;
       box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+      /* box-shadow: 0 0 4px rgba(232,47,92,0.7); */
       border-radius: 4px;
     }
     .description{
