@@ -34,9 +34,7 @@
         <router-link class="lg-links" to="/about">About us</router-link>
         <router-link class="lg-links" to="/partner">Partner</router-link>
       </div> 
-      <div class="liscence">
-        
-      </div>
+   
       <div class="footer-sm">
         <div class="footer-hero">
           <img src="./assets/logo.svg" id="footer-logo">
@@ -49,6 +47,11 @@
         <router-link class="ft-link" to="/about">About us</router-link>
         <router-link class="ft-link" to="/contact" >Contact</router-link>
       </div>
+      </div>
+      <div class="social-icons">
+<a href="https://www.instagram.com/covidfyi.in/"><i id = "ig" class="fab fa-instagram social fa-2x"></i></a>
+<a href="https://twitter.com/covid_fyi"><i id = "tw" class="fab fa-twitter social fa-2x"></i></a>
+<a href="https://www.facebook.com/covidfyi"><i id = "fb" class="fab fa-facebook-square social fa-2x"></i></a>
       </div>
     </footer>
   </div>
@@ -104,6 +107,31 @@ nav{
   margin-left: 5px;
   margin-right:5px;
 }
+.social-icons{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top:10px;
+  transition:.3s;
+}
+#ig:hover{
+  color: #e1306c;
+}
+#tw:hover{
+  color: #1da1f2;
+}
+#fb:hover{
+  color: #4267B2;
+}
+#ig:active{
+  color: #e1306c;
+}
+#tw:active{
+  color: #1da1f2;
+}
+#fb:active{
+  color: #4267B2;
+}
 #logo{
   height: 100px;
   width: 100px;
@@ -141,7 +169,7 @@ nav{
 }
 .menu{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-content: center;
   font-size: 24px;
   font-weight: 800;
@@ -179,11 +207,16 @@ footer{
   color: var(--primary-color);
 }
 
+.social:hover{
+  color:red;
+  transition:.3s;
+}
 .footer-sm-menu{
   font-size: 16px;
   margin-top:5px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  width:100%;
 }
 
 @media screen and (max-width:600px){

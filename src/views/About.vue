@@ -48,8 +48,12 @@ export default {
                   img: 'https://i.postimg.cc/43wYF5x3/e1022211-c248-414f-af10-d36352762c5a.png',
                   link:'https://www.linkedin.com/in/simransoni/',
                   details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
-              },
-              {
+              },{
+                  name: 'Naresh Priyadarshi',
+                  img: 'https://i.postimg.cc/MKHb5Dyp/0.jpg',
+                  link:'https://in.linkedin.com/in/nareshdevpriyadarshi',
+                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+              },{
                   name: 'Sujit Joshi',
                   img: 'https://i.postimg.cc/3NnFpJ9x/c225db69-03b7-4da7-a56f-d12792f4b65b.png',
                   link:'https://www.linkedin.com/in/sujitjoshi00/',
@@ -81,11 +85,6 @@ export default {
                   details: 'Full Stack & ML engineer. Founder @aibuddha.in'
               },
               {
-                  name: 'Avinash Sivan',
-                  img: 'https://i.postimg.cc/7YTTY0mB/13fd7bbe-65ac-41ff-85b7-40798b2ca8ce.png',
-                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
-                  details: 'A No-nonsense simple UX Designer who loves to craft minimalistic designs. The minimal a design, the maximum an impact'
-              },{
                   name: 'Zeeshan Fatmi',
                   img: 'https://www.tracks2travel.com/wp-content/uploads/2020/04/download.png',
                   link:'https://www.linkedin.com/in/mdzeeshanfatmi/',
@@ -100,6 +99,11 @@ export default {
                   img: 'https://i.postimg.cc/CxGBbYyk/427261e7-ce6b-4948-87f5-058972e2351f.png',
                   link:'https://www.linkedin.com/in/yogesh-bhatt',
                   details: 'B.Tech CSE student at Graphic Era University'
+              },{
+                  name: 'Avinash Sivan',
+                  img: 'https://i.postimg.cc/7YTTY0mB/13fd7bbe-65ac-41ff-85b7-40798b2ca8ce.png',
+                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
+                  details: 'A No-nonsense simple UX Designer who loves to craft minimalistic designs. The minimal a design, the maximum an impact'
               },{
                   name: 'Samarth Goel',
                   img: 'https://i.postimg.cc/t42z5g1Z/8f6e67d5-0226-4c11-a48e-e3f61e11b390.png',
@@ -125,11 +129,6 @@ export default {
                   img: 'https://i.postimg.cc/G9wV38z7/7e360f82-cec9-4f67-b645-8bc70751dbf7.png',
                   link:'https://www.linkedin.com/in/aaron-abraham-n-6255b2175',
                   details: 'GRD Coimbatore, B.com, Accounts at Grace on Wheels, Freelance Writer.'
-              },{
-                  name: 'Kedar Anavardekar',
-                  img: 'https://i.postimg.cc/Qt4WVq2z/fa844458-18e6-4740-b8ee-7b37d1c60711.png',
-                  link:'https://www.linkedin.com/in/kedar-anavardekar-24120b44',
-                  details: 'M.Tech, IIT BOMBAY. Trying out how technology can help mankind.'
               },{
                   name: 'Tanmay Mundra',
                   img: 'https://i.postimg.cc/9Xk7hJtR/c561c20a-b0ce-4904-b908-21d7388dfe84.png',
