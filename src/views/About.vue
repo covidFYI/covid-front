@@ -52,7 +52,7 @@ export default {
                   name: 'Naresh Priyadarshi',
                   img: 'https://i.postimg.cc/MKHb5Dyp/0.jpg',
                   link:'https://in.linkedin.com/in/nareshdevpriyadarshi',
-                  details: 'Ex Analyst at M&A Consulting - EY | KPMG, MBA - IIM Kozhikode'
+                  details: 'Mentor; Innovator, Start-up expert, Accelerator, Strategist, Coach;  Continuous learner; CEO; Alumnus of IIM-A, SSCBS.'
               },{
                   name: 'Sujit Joshi',
                   img: 'https://i.postimg.cc/3NnFpJ9x/c225db69-03b7-4da7-a56f-d12792f4b65b.png',
