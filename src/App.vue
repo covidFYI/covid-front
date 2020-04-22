@@ -54,9 +54,24 @@
 <a href="https://www.facebook.com/covidfyi"><i id = "fb" class="fab fa-facebook-square social fa-2x"></i></a>
       </div>
     </footer>
+    <go-top
+      :size="60"
+      :bottom="80"
+      bg-color="#202020"
+      fg-color="#E82F5C"
+    ></go-top>
   </div>
 </template>
+<script>
+import GoTop from '@inotom/vue-go-top';
 
+export default{
+  components: {
+    GoTop
+  }
+}
+
+</script>
 
 <style>
 :root{

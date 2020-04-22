@@ -43,7 +43,7 @@ export default {
     faScript.setAttribute('src', 'https://kit.fontawesome.com/525c03e75b.js')
     document.head.appendChild(faScript)
     if(!JSON.parse(localStorage.getItem('visited')) || this.timeLimitExpired()){
-
+      //if(false){
       axios.get(`${this.URL}info_types/`)
       .then(resp => {
       
