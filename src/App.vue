@@ -57,8 +57,8 @@
     <go-top
       :size="60"
       :bottom="80"
-      bg-color="#202020"
-      fg-color="#E82F5C"
+      fg-color="#202020"
+      bg-color="#E82F5C"
       :max-width="320"
     ></go-top>
   </div>
