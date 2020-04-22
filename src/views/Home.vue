@@ -30,7 +30,7 @@ export default {
     return{
       infotypes: [],
       respData: [],
-      URL: 'http://covid-fyi-backend-2.herokuapp.com/api/v1/covidfyi/',
+      URL: 'https://covid-fyi-backend-2.herokuapp.com/api/v1/covidfyi/',
       updateDurationMinutes: 20,
       loaded:false
     }
