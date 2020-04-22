@@ -100,11 +100,6 @@ export default {
                   link:'https://www.linkedin.com/in/yogesh-bhatt',
                   details: 'B.Tech CSE student at Graphic Era University'
               },{
-                  name: 'Avinash Sivan',
-                  img: 'https://i.postimg.cc/7YTTY0mB/13fd7bbe-65ac-41ff-85b7-40798b2ca8ce.png',
-                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
-                  details: 'A No-nonsense simple UX Designer who loves to craft minimalistic designs. The minimal a design, the maximum an impact'
-              },{
                   name: 'Samarth Goel',
                   img: 'https://i.postimg.cc/t42z5g1Z/8f6e67d5-0226-4c11-a48e-e3f61e11b390.png',
                   link:'https://www.linkedin.com/in/goelsamarth998/',
@@ -124,11 +119,6 @@ export default {
                   img: 'https://i.postimg.cc/RZ5J3hYv/7397bf11-56ce-48df-bafb-4489a17014a1.png',
                   link:'https://www.linkedin.com/in/saathwik/',
                   details: 'A Data Scientist and a Visual Designer with M.Sc in Data Science and corporate experience at Eli Lilly Intl. currently pursuing MBA from IIM Kozhikode.'
-              },{
-                  name: 'Aaron Abraham',
-                  img: 'https://i.postimg.cc/G9wV38z7/7e360f82-cec9-4f67-b645-8bc70751dbf7.png',
-                  link:'https://www.linkedin.com/in/aaron-abraham-n-6255b2175',
-                  details: 'GRD Coimbatore, B.com, Accounts at Grace on Wheels, Freelance Writer.'
               },{
                   name: 'Tanmay Mundra',
                   img: 'https://i.postimg.cc/9Xk7hJtR/c561c20a-b0ce-4904-b908-21d7388dfe84.png',
@@ -150,15 +140,15 @@ export default {
                   link:'https://www.linkedin.com/in/utkarsh-gupta-01',
                   details: 'I am currently pursuing MBA from IIM Kozhikode. I have worked in Panasonic in the field of Electric Vehicles and IOT.'
               },{
-                  name: 'Aliasgar',
-                  img: 'https://i.postimg.cc/rsJNF4Kj/9d781da6-e098-497a-a010-36918ecb9f01.png',
-                  link:'https://www.linkedin.com/in/aliasgar-kundawala-6aa32a113/',
-                  details: ' Market Analyst - FML. BBA - St. Xavier\'s college, Kolkata'
-              },{
                   name: 'Prateek Katiyar',
                   img: 'https://i.postimg.cc/8k9bYfyW/353080e8-7417-43da-906d-297ccf1f722e.png',
                   link:'https://www.linkedin.com/in/prateek-katiyar-aa0ba373',
                   details: 'MBA, Indian Institute of Management, Kozhikode'
+              },{
+                  name: 'Avinash Sivan',
+                  img: 'https://i.postimg.cc/7YTTY0mB/13fd7bbe-65ac-41ff-85b7-40798b2ca8ce.png',
+                  link:'http://linkedin.com/in/avinash-sivan-459168ab',
+                  details: 'A No-nonsense simple UX Designer who loves to craft minimalistic designs. The minimal a design, the maximum an impact'
               }
           ]
       }
