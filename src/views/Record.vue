@@ -1,11 +1,12 @@
 <template>
+
     <div class="record page" :class="{left: loaded}">
       
       <img src="../assets/logo.svg" v-show="!loaded" id="loader">
         <div class = "content" v-if="loaded" >
         <div class = "breadcrumb-rec">
           <router-link to="/">Home</router-link> >
-          <router-link  :to="{name: 'State', query:{type: currentType } }">State</router-link>
+          <router-link  :to="{name: 'State', query:{type: currentType } }">{{state}}</router-link>
           <span> > {{mapLabels(currentType)}} </span>
         </div>
         <div v-show="currentType=='Doctor'" class="select-drop">

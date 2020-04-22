@@ -1,7 +1,7 @@
 <template>
   <div class="state page">
     <div class = "breadcrumb">
-    <router-link to="/">Home</router-link> 
+    <router-link to="/">{{currentType}}</router-link> 
     <span> > State </span>
     </div>
     <div class = "heading">By State or Union Territory</div>

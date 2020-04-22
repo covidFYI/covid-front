@@ -30,8 +30,8 @@ export default {
     return{
       infotypes: [],
       respData: [],
-      URL: 'https://covid-fyi-backend-2.herokuapp.com/api/v1/covidfyi/',
-      updateDurationMinutes: 1,
+      URL: 'http://covid-fyi-backend-2.herokuapp.com/api/v1/covidfyi/',
+      updateDurationMinutes: 20,
       loaded:false
     }
   },
@@ -42,7 +42,8 @@ export default {
     let faScript = document.createElement('script')
     faScript.setAttribute('src', 'https://kit.fontawesome.com/525c03e75b.js')
     document.head.appendChild(faScript)
-    if(!JSON.parse(localStorage.getItem('visited')) || this.timeLimitExpired()){
+    //if(!JSON.parse(localStorage.getItem('visited')) || this.timeLimitExpired()){
+    if(false){ //remove this before pushing.
       axios.get(`${this.URL}info_types/`)
       .then(resp => {
       
