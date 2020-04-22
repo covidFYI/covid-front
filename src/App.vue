@@ -59,6 +59,7 @@
       :bottom="80"
       bg-color="#202020"
       fg-color="#E82F5C"
+      :max-width="320"
     ></go-top>
   </div>
 </template>
